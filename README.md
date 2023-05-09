@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Day-2 : Interior Designer
+![download](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/4d3e1ab2-ab28-4d16-9447-5642a75e5819)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
