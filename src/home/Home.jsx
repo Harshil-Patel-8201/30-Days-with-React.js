@@ -7,6 +7,8 @@ const Home = () => {
   return (
     <div>
       <div className="w-screen h-screen bg-teal-900 flex flex-col px-40">
+
+        {/* header */}
         <div className="flex flex-row justify-between py-8 border-b-2 border-gray-200/20">
           <HiOutlineMenuAlt4 className="text-2xl text-white" />
           <div className="flex flex-row gap-8">
@@ -21,6 +23,7 @@ const Home = () => {
           </div>
         </div>
 
+        {/* text - img area*/}
         <div className="flex flex-row">
           <div className="flex flex-col my-5">
             <p className="text-6xl text-white text-left tracking-wider font-bold">
@@ -32,6 +35,8 @@ const Home = () => {
             <p className="text-base text-white text-left my-5 w-[300px]">
               Welcome to my personal webiste, here you will learn more about me
             </p>
+
+            {/* watch video button */}
             <div className="flex flex-row justify-between w-[230px] rounded-full bg-black/20 px-2 py-2 gap-10 items-center">
               <p className="text-white text-base capitalize ml-5">
                 watch Video
@@ -43,6 +48,8 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          {/* favorite number text */}
           <div className="relative w-full">
             <div className="flex flex-col absolute bottom-0 right-0 mr-20 h-[180px]">
               <p className="text-[100px] text-white text-left tracking-wider font-bold">
@@ -53,6 +60,8 @@ const Home = () => {
                 to these figures
               </p>
             </div>
+
+            {/* player image */}
             <div className="absolute">
               <img
                 src={PlayerImage}
@@ -62,6 +71,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        {/* bottom informtaion div */}
         <div className="bg-yellow-300 mx-auto h-[150px] z-50 mt-20 flex flex-row justify-center items-center rounded-lg">
           <p className="text-white w-[200px] h-full bg-yellow-900/40 text-center flex justify-center items-center text-xl font-bold">
             MY CAREER
