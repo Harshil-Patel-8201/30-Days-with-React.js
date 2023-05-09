@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Day-1 : Soccer Player
+
+![Screenshot 2023-05-08 174538](https://user-images.githubusercontent.com/83079592/237040035-078bd7b8-3cb8-4bd9-b639-9a05b4702f7b.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
