@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        headText: ["Konkhmer Sleokchher", "cursive"],
+        headText: ['Play', "sans-serif"],
       },
       colors: {
-        bgColor: "#2a3029",
+        greenBg: "#c9e501",
       },
     },
   },
