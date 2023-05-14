@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Day-3 : OK Energy Drink
+
+![ok drink](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/53b9f47e-3952-467b-a824-1b3992508754)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
