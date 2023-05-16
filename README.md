@@ -1,5 +1,5 @@
-# Getting Started with Create React App
-
+# Day-3 : Etalon Jackets
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/6b0e5970-1cc5-40ad-9a7e-486efcd9415f)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
