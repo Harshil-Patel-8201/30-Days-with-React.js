@@ -3,11 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        headText: ['Play', "sans-serif"],
-      },
       colors: {
-        greenBg: "#c9e501",
+        greenBg: "#3a5e46",
+        lightYello: "#fdde67",
+        brandBg: "#181818",
       },
     },
   },
