@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Day-5 : Lord - Man's Fashion Studio
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/18068f4a-bf02-44ee-a4dd-4c4b6583fdf9)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
