@@ -3,10 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        titleText: ["Cardo", "serif"],
+      },
       colors: {
-        greenBg: "#3a5e46",
-        lightYello: "#fdde67",
-        brandBg: "#181818",
+        bgBrown: "#351313",
+        bgRed: "#780f1a",
+        yelloWhite: "#fff4e6",
+        bgLable: "#551e1e",
       },
     },
   },
