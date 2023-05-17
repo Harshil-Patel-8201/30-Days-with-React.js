@@ -4,13 +4,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        titleText: ["Cardo", "serif"],
+        titleText: ["Josefin Sans", "sans-serif"],
       },
       colors: {
-        bgBrown: "#351313",
-        bgRed: "#780f1a",
-        yelloWhite: "#fff4e6",
-        bgLable: "#551e1e",
+        bgBlack: "#1b1b1b",
+        bgGrayDark: "#434343",
+        bgGrayLight: "#515151",
+        bgLightGreen: "#cae943",
+        smallText: "#828282",
+        blurGray: "#2c2c2c",
+        blurLightGrar: "#484848",
       },
     },
   },
