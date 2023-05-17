@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Day-6 : rent - Rent the best cars
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/8ac5ae99-a76b-489a-9d08-1c748a101be9)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
