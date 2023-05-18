@@ -1,119 +1,117 @@
 import React from "react";
-import Car from "../assets/car.png";
-import Apple from "../assets/apple.png";
-import { BsMouse } from "react-icons/bs";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { GoLocation } from 'react-icons/go'
-import {FiSearch} from "react-icons/fi"
+import Logo from "../assets/logo.png"
+import ManPhoto from "../assets/man.png"
+import { FiArrowUpRight } from "react-icons/fi"
+import Jacket from '../assets/white_jacket.png'
+import Shoes from "../assets/shoes.png"
+import Cap from '../assets/cap.png'
 
 const Home = () => {
   return (
-    <div className="relative w-screen h-[900px] flex flex-row">
-      {/* Background color */}
-      <div className="w-full h-full bg-bgBlack"></div>
-      <div className="w-[2000px] h-full bg-gradient-to-r from-bgGrayDark via-bgGrayLight to-bgGrayDark"></div>
-      <div className="w-full h-full bg-bgBlack"></div>
+    <div className="w-screen h-[820px] bg-white px-[100px] py-[10px] flex flex-col">
+      {/* Header */}
+      <div className="flex flex-row justify-between items-center">
+        <div className="h-[60px] w-[100px] bg-colorBlack flex justify-center items-center rounded-xl">
+          <img src={Logo} className="w-[40px]" alt="" />
+        </div>
+        <div className="flex flex-row gap-10">
+          <p className="text-sm text-black">Home</p>
+          <p className="text-sm text-black/40 font-thin">Trends</p>
+          <p className="text-sm text-black/40 font-thin">Store</p>
+          <p className="text-sm text-black/40 font-thin">Coopration</p>
+        </div>
+        <p className="text-white bg-colorBlack px-5 py-2 text-sm font-thin rounded-lg">
+          Contact Us
+        </p>
+      </div>
 
-      {/* hover objects */}
-      <div className="absolute flex flex-col">
-        {/* Header */}
-        <div className="w-screen flex flex-row justify-between px-[100px] py-[20px] items-center">
-          {/* Logo */}
-          <div className="flex flex-row gap-3">
-            <p className="text-4xl font-titleText text-bgLightGreen">r</p>
-            <p className="text-4xl font-titleText text-white">e</p>
-            <p className="text-4xl font-titleText text-bgLightGreen">n</p>
-            <p className="text-4xl font-titleText text-white">t</p>
+      {/* man picture row */}
+      <div className="relative w-full h-full">
+        <div className="absolute right-5 top-5">
+          <div className="w-[400px] h-[400px] rounded-full bg-gradient-to-r from-transparent via-white to-gray-300/50 flex justify-center items-center">
+            <div className="absolute w-[300px] h-[300px] rounded-full flex bg-gradient-to-r from-transparent to-white justify-center items-center"></div>
           </div>
+        </div>
 
-          <div className="flex flex-row gap-12">
-            <p className="text-base text-white font-semibold">Home</p>
-            <p className="text-base text-gray-400 font-semibold">Cars</p>
-            <p className="text-base text-gray-400 font-semibold">
-              Our Services
-            </p>
-          </div>
+        {/* Title text */}
+        <div className="absolute flex flex-col top-20 text-left gap-10">
+          <p className="text-black text-7xl font-semibold w-[300px] text-left tracking-wider">
+            Men's Autumn Collection
+          </p>
+          <p className="text-xs text-white bg-colorBlue rounded-lg px-7 py-3 mr-auto shadow-xl shadow-colorBlue/30">
+            Open Catelog
+          </p>
+        </div>
 
-          <p className="text-black px-7 py-2 bg-white shadow-2xl shadow-gray-100/30 rounded-lg font-semibold">
-            Contact Us
-          </p>
-
-          <div className="absolute flex flex-col top-[170px] left-[100px] gap-20">
-            <div className="flex flex-col text-left">
-              <p className="text-5xl font-titleText text-white">100+</p>
-              <p className="text-smallText text-base font-semibold">
-                Types of machines
-              </p>
-            </div>
-            <div className="flex flex-col text-left">
-              <p className="text-5xl font-titleText text-white">20k+</p>
-              <p className="text-smallText text-base font-semibold">
-                Clients served
-              </p>
-            </div>
-          </div>
-          <p className="absolute w-[500px] mx-auto left-0 right-0 top-[150px] text-6xl font-titleText text-white">
-            Rent the best cars
-          </p>
-          <p className="absolute w-[230px] top-[220px] ml-auto right-24 text-smallText text-base font-semibold text-justify">
-            We want you to have a stress-free rental experience, so we make it
-            easy to hire a car - by providing simple search tools, customer
-            reviews and plenty of pick-up locations across the city.
-          </p>
+        {/* Man Photo */}
+        <div className="relative text-right">
           <img
-            src={Car}
-            className="absolute top-0 bottom-0 right-0 left-0 mx-auto w-[800px] mt-[180px]"
+            src={ManPhoto}
+            className="w-[550px] absolute -top-[200px] -right-10"
             alt=""
           />
-        </div>
-        <div className="absolute w-screen top-[530px] px-[100px] flex flex-row justify-between items-center">
-          <img src={Apple} className="w-[250px] -ml-10" alt="" />
-          <p className="h-[40px] text-bgGrayDark px-7 py-2 bg-bgLightGreen shadow-2xl shadow-bgLightGreen rounded-lg font-semibold -ml-28">
-            Open Catalog
-          </p>
-          <BsMouse className="text-white text-4xl" />
+          <div className="absolute w-[230px] h-[150px] bg-black/70 rounded-2xl right-[200px] top-[270px] px-5 py-3 flex flex-col text-left justify-between">
+            <p className="text-white text-lg font-normal">
+              All Jackets are discounted
+            </p>
+            <div className="flex flex-row items-center gap-3 justify-between">
+              <p className="text-6xl font-bold text-colorYello">35%</p>
+              <div className="px-3 py-3 rounded-lg border border-white flex justify-center items-center">
+                <FiArrowUpRight className="text-2xl text-white" />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="w-full h-[250px] rounded-t-[100px] bg-blurGray mt-[650px] flex justify-center items-center">
-          <div className="w-full h-[130px] rounded-3xl bg-blurLightGrar mx-24 flex flex-row items-center justify-between px-[50px]">
-            <div className="flex flex-col">
-              <div className="flex flex-row items-center gap-3">
-                <GoLocation className="text-white text-2xl" />
-                <p className="text-white text-lg font-semibold">
-                  Choose a location
-                </p>
-                <MdKeyboardArrowDown className="text-white text-2xl" />
-              </div>
-              <p className="text-smallText text-sm font-semibold">
-                London, Great Britain
+        <div className="absolute z-30 w-full h-[250px] rounded-3xl top-[470px] bg-gray-300/80 flex flex-row px-10 justify-between items-center">
+          <div className="flex flex-col text-left justify-between">
+            <p className="text-black tracking-wider font-semibold text-4xl">
+              Popular
+            </p>
+            <p className="text-black tracking-wider font-semibold text-4xl">
+              Products
+            </p>
+            <div className="w-full h-[1px] bg-colorBlack/70 my-5"></div>
+            <p className="text-colorBlack/70 text-2xl">Autum-Winter 2022</p>
+          </div>
+
+          {/* jacket */}
+          <div className="relative w-[230px] h-[180px] rounded-2xl bg-colorBlack flex justify-center items-center">
+            <img src={Jacket} className="w-[120px]" alt="" />
+            <div className="absolute flex flex-col justify-between h-[120px] mt-5 right-0">
+              <p className="text-white text-[18px] font-medium -rotate-90">
+                jackets
               </p>
-            </div>
-            <div className="w-[1px] h-[60px] bg-white"></div>
-            <div className="flex flex-col">
-              <div className="flex flex-row items-center gap-3">
-                <GoLocation className="text-white text-2xl" />
-                <p className="text-white text-lg font-semibold">Pick-up date</p>
-                <MdKeyboardArrowDown className="text-white text-2xl" />
+              <div className="px-2 py-2 rounded-lg bg-white flex justify-center items-center mx-auto">
+                <FiArrowUpRight className="text-2xl text-black" />
               </div>
-              <p className="text-smallText text-sm font-semibold">
-                Dec 08, 10:00 PM
-              </p>
             </div>
-            <div className="w-[1px] h-[60px] bg-white"></div>
-            <div className="flex flex-col">
-              <div className="flex flex-row items-center gap-3">
-                <GoLocation className="text-white text-2xl" />
-                <p className="text-white text-lg font-semibold">Return date</p>
-                <MdKeyboardArrowDown className="text-white text-2xl" />
+          </div>
+
+          {/* shoes */}
+          <div className="relative w-[230px] h-[180px] rounded-2xl bg-white flex justify-center items-center">
+            <img src={Shoes} className="w-[120px]" alt="" />
+            <div className="absolute flex flex-col justify-between h-[120px] mt-5 -right-2">
+              <p className="text-black text-[18px] font-medium -rotate-90">
+                sneakers
+              </p>
+              <div className="px-2 py-2 rounded-lg bg-colorBlack flex justify-center items-center mx-auto">
+                <FiArrowUpRight className="text-2xl text-white" />
               </div>
-              <p className="text-smallText text-sm font-semibold">
-                Dec 08, 10:00 PM
-              </p>
             </div>
-            <div className="px-10 py-6 bg-bgLightGreen shadow-2xl shadow-bgLightGreen rounded-lg flex flex-row justify-center items-center gap-3 ml-24">
-              <FiSearch className="text-2xl text-bgGrayDark" />
-              <p className="text-bgGrayDark text-base font-semibold">Search</p>
+          </div>
+
+          {/* cap */}
+          <div className="relative w-[230px] h-[180px] rounded-2xl bg-colorBlue flex justify-center items-center">
+            <img src={Cap} className="w-[120px]" alt="" />
+            <div className="absolute flex flex-col justify-between h-[120px] mt-5 right-3">
+              <p className="text-white text-[18px] font-medium -rotate-90">
+                caps
+              </p>
+              <div className="px-2 py-2 rounded-lg bg-white flex justify-center items-center mx-auto">
+                <FiArrowUpRight className="text-2xl text-black" />
+              </div>
             </div>
           </div>
         </div>
