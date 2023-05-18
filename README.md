@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Day-7 : Autumn Collection
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/f4483811-f6bb-4782-bf14-0cf01a8fa23b)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
