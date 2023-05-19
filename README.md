@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Day-10 : Fitness website
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/1c67bf49-76be-49f4-be80-2c6124f4cc59)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
