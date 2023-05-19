@@ -1,81 +1,105 @@
 import React from "react";
 import Logo from "../assets/logo.png";
-import AppleLogo from "../assets/apple.png";
-import { IoMdMail } from "react-icons/io";
-import Circle from "../assets/blue_circle.png"
-import HandPhone from "../assets/mobile.png"
-import Icon1 from  "../assets/icon1.png"
-import Icon2 from  "../assets/icon2.png"
-import Icon3 from  "../assets/icon3.png"
+import BG from "../assets/bg-green.png";
+import JacketWomen from "../assets/jacketWomen.png";
+import Women from "../assets/woman1.png";
 
 const Home = () => {
   return (
-    <div className="relative w-screen h-auto bg-colorWhite flex flex-col px-[100px]">
+    <div className="w-screen h-auto bg-colorWhite flex flex-col px-[100px]">
       {/* Header */}
-      <div className="w-full flex flex-row py-5 items-center justify-between">
-        <img src={Logo} className="w-[120px]" alt="" />
-        <div className="flex flex-row gap-7">
-          <p className="text-sm text-black font-semibold">Home</p>
-          <p className="text-sm text-gray-400 font-semibold">About</p>
-          <p className="text-sm text-gray-400 font-semibold">Price</p>
-          <p className="text-sm text-gray-400 font-semibold">Download</p>
+      <div className="flex flex-row justify-between py-[30px] items-center">
+        <img src={Logo} className="w-[130px]" alt="" />
+        <div className="flex flex-row items-center gap-4">
+          <p className="text-black text-sm font-medium tracking-wide">About</p>
+          <p className="text-black text-sm font-medium tracking-wide">
+            Programs
+          </p>
+          <p className="text-black text-sm font-medium tracking-wide">
+            Servies
+          </p>
+          <p className="text-black text-sm font-medium tracking-wide">
+            Support
+          </p>
+          <p className="text-white bg-colorBlack px-4 py-2 rounded-full text-sm font-medium tracking-wide">
+            Join
+          </p>
         </div>
-        <img src={AppleLogo} className="w-[150px]" alt="" />
       </div>
 
-      {/* Main Area */}
-      <div className="flex flex-row">
-        {/* Text */}
-        <div className="w-[380px] flex flex-col text-left mt-20">
-          <p className=" text-left text-5xl font-bold text-balck tracking-wider">
-            Mobile Banking and Invoicing
+      {/* Title Text */}
+      <div className="flex flex-row justify-between">
+        <div className="flex flex-col text-left my-20">
+          <p className="text-colorBlack font-extrabold text-5xl">
+            You are not alone.
           </p>
-          <p className="text-black text-lg font-light tracking-wide py-10">
-            Control expenses, manage payments and cards on the go.
+          <p className="text-colorBlack font-extrabold text-5xl">
+            You have peers.
           </p>
-          <div className="w-full bg-white rounded-lg h-[60px] flex flex-row justify-between px-1 py-1 items-center">
-            <div className="flex flex-row items-center gap-2 ml-4">
-              <IoMdMail className="text-gray-300 text-xl" />
-              <p className="text-black text-sm tracking-wider">
-                mehmet@gmail.com
-              </p>
+          <p className="w-[340px] texr-lg text-colorText py-[30px]">
+            Join thousands of people who have walked in your shoes and survived.
+          </p>
+          <div className="flex flex-row gap-[30px] items-center">
+            <p className="text-white bg-colorBlack px-5 py-3 rounded-full text-lg font-medium">
+              Join Peers
+            </p>
+            <div className="flex flex-row items-center">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                className="w-[60px] h-[60px] object-cover rounded-full border-2 border-white"
+                alt=""
+              />
+              <img
+                src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                className="w-[60px] h-[60px] object-cover rounded-full border-2 border-white -ml-5"
+                alt=""
+              />
+              <img
+                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                className="w-[60px] h-[60px] object-cover rounded-full border-2 border-white -ml-5"
+                alt=""
+              />
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                className="w-[60px] h-[60px] object-cover rounded-full border-2 border-white -ml-5"
+                alt=""
+              />
+              <img
+                src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                className="w-[60px] h-[60px] object-cover rounded-full border-2 border-white -ml-5"
+                alt=""
+              />
             </div>
-            <p className="text-white bg-colorBlue px-3 py-3 rounded-lg mr-1">
-              Try it now
-            </p>
-          </div>
-          <div className="w-[250px] my-20 flex flex-row rounded-xl bg-colorBlue text-right justify-between shadow-lg shadow-gray-400">
-            <img
-              src={Circle}
-              className="w-[100px] h-[100px] -mt-8 -ml-2"
-              alt=""
-            />
-            <p className="w-[150px] text-white font-semibold text-base text-left my-7">
-              More than 5000 happy customers
-            </p>
           </div>
         </div>
 
-        {/* Immage */}
-        <img src={HandPhone} className="ml-auto w-[450px]" alt="" />
+        {/* image */}
+        <div className="relative">
+          <img src={BG} className="w-[500px] h-[300px] mt-[150px]" alt="" />
+          <img
+            src={JacketWomen}
+            className="absolute -top-[143px] -right-10"
+            alt=""
+          />
+          <p className="text-black text-sm -mt-12 mr-[250px]">
+            Giovanni, Combat Medic
+          </p>
+        </div>
       </div>
 
-      {/* Icons */}
-      <img
-        src={Icon1}
-        className="absolute w-[100px] right-[120px] top-[200px]"
-        alt=""
-      />
-      <img
-        src={Icon2}
-        className="absolute w-[80px] right-[300px] top-[600px]"
-        alt=""
-      />
-      <img
-        src={Icon3}
-        className="absolute w-[80px] right-[600px] top-[300px]"
-        alt=""
-      />
+      {/* Second image */}
+      <div className="flex flex-row items-center justify-between">
+        <div className="relative">
+          <img src={Women} className="ml-[140px]" alt="" />
+          <p className="absolute bottom-10 ml-8 text-black text-sm">
+            Nakita, ER Nurse
+          </p>
+        </div>
+        <div className="flex flex-col text-left mr-[100px] mt-[80px]">
+          <p className="text-colorBlack text-3xl">Peer-to-peer support</p>
+          <p className="text-colorBlack text-3xl">when you need it the most.</p>
+        </div>
+      </div>
     </div>
   );
 };
