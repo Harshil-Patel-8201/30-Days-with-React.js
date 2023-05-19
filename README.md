@@ -1,5 +1,8 @@
 # Day-8 : Finced
 
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/0249424b-7021-4314-b4b8-9a6692f1a9c3)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
