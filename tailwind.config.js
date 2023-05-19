@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        colorWhite: "#f9feff",
-        colorBlack: "#292a3e",
-        colorText: "#797b86",
+        colorDarkBlue: "#1b1e48",
+        colorPink: "#ff4879",
+        colorSmallText: "#6e6d80",
+        colorYelloIcon: "#e9ab65",
+        colorPinkIcon: "#d56d87",
+        colorBlueIcon: "#465e9f",
       },
     },
   },
