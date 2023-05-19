@@ -1,4 +1,4 @@
-# Day-8 : Battle Peer
+# Day-9 : Battle Peer
 
 ![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/fd16536b-4478-43b3-9fea-2cabd42f34d6)
 
