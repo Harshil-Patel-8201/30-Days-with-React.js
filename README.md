@@ -1,7 +1,6 @@
 # Day-11 : Adventure
 
-![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/8baf90fc-18e7-4b82-a9a7-7d3d84f6796f)
-
+![React-App (1)](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/56f4ef9f-16be-4116-a780-dbb39cf1e1da)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
