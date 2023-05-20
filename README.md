@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Day-12 : FREECYCLE cloths
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/a23df93d-e6cb-45e1-8ff3-d682cd5590a0)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
