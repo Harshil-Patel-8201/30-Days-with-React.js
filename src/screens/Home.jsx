@@ -1,81 +1,151 @@
 import React from "react";
-import BgPic from "../assets/mountain.jpg";
-import Logo from "../assets/logo.png";
-import { BsMoonStarsFill } from "react-icons/bs";
-import Man from "../assets/man.jpg"
-import Beach from "../assets/beach.jpg"
-import Tree from "../assets/tree.jpg"
+import { FiSearch } from "react-icons/fi";
+import User from "../assets/user.jpg";
+import { SlHandbag } from "react-icons/sl";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import Girl2 from "../assets/girl2.png";
+import Girl from "../assets/girl.png";
+import { ImLocation } from "react-icons/im";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillGoogleCircle, AiFillInstagram } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <div className="relative w-screen h-auto">
-      {/*Background*/}
-      <img src={BgPic} className="w-scrren h-full object-contain" alt="" />
-      <div className="absolute w-full h-full z-20 flex flex-row top-0">
-        <div className="w-full h-full bg-white/90"></div>
-        <div className="w-[500px] h-full bg-gradient-to-b from-emerald-200/80 via-orange-300/40 to-transparent"></div>
-        <div className="w-full h-full bg-white/90"></div>
-      </div>
+    <div className="relative w-screen h-[800px] flex flex-row">
+      <div className="w-full h-full bg-colorGreen"></div>
+      <div className="w-full h-full bg-colorBrown"></div>
 
-      <div className="absolute w-full h-full z-30 top-0 px-[80px]">
-        {/*header*/}
-        <div className="flex flex-row justify-between w-full py-[30px] items-center">
-          <div className="flex flex-row gap-8 text-xs font-semibold text-black/80 items-center">
-            <p>School</p>
-            <p>About Us</p>
-            <p>Our Camp</p>
+      <div className="w-full absolute flex flex-col px-[80px]">
+        {/* Header */}
+        <div className="w-full flex flex-row justify-between items-center py-[20px]">
+          {/* Search */}
+          <div className="flex flex-row gap-5 items-center text-sm font-semibold text-colorSmallText">
+            <div className="px-1 py-1 rounded-full border-[1px] border-colorSmallText flex items-center justify-center">
+              <FiSearch className="text-lg" />
+            </div>
+            <p>Catalog</p>
+            <p>Collection points</p>
+            <p>Who we are</p>
           </div>
-          <img src={Logo} className="w-[60px]" alt="" />
-          <div className="flex flex-row gap-8 text-xs font-semibold text-colorBlack items-center">
-            <p>Activities</p>
-            <p>Contact Us</p>
-            <div className="flex flex-row gap-2 rounded-full px-[2px] py-[2px] items-center border-2 border-black">
-              <BsMoonStarsFill className="text-sm ml-1" />
-              <div className="h-4 w-4 rounded-full bg-orange-600"></div>
+
+          {/* Freecycle */}
+          <p className="text-xl font-styleText tracking-wider text-colorTitleText font-semibold ml-11">
+            FREECYCLE
+          </p>
+
+          {/* Profile */}
+          <div className="flex flex-row items-center gap-5 text-colorSmallText text-sm font-semibold">
+            <p>Delivery</p>
+            <p>Orders</p>
+            <p>
+              Balance{" "}
+              <span className="text-colorTitleText font-extrabold">
+                21 points
+              </span>
+            </p>
+            <img
+              src={User}
+              className="w-8 h-8 rounded-full border-[1px] object-cover border-colorLightYello"
+              alt=""
+            />
+            <div className="px-2 py-2 rounded-full flex items-center justify-center bg-colorPurple">
+              <SlHandbag className="text-lg text-black" />
             </div>
           </div>
         </div>
-        <p className="absolute text-[220px] font-styleText font-extrabold -rotate-12 ml-[140px] top-[150px] text-colorBlack">
-          Adventure
+        <div className="w-full h-[1px] bg-colorSmallText"></div>
+        <p className="text-right text-colorSmallText text-sm font-semibold py-[12px]">
+          You got a
+          <span className="text-colorTitleText font-extrabold">
+            {" "}
+            10% bonus{" "}
+          </span>
+          as a loyal user
         </p>
 
-        {/*text*/}
-        <div className="absolute top-[150px] w-[240px] text-left flex flex-col gap-5">
-          <p className="text-xs uppercase font-bold text-colorBlack">
-            WE CREATE TRAVELS THAT FEEL LIKE REAL ADVENTURES - IN MOST EXCITING
-            EARTH'S CORNERS
+        {/* Title Text */}
+        <div className="absolute left-[80px] top-[180px] flex flex-col w-[350px] text-left">
+          <p className="text-5xl text-colorTitleText font-styleText">
+            Free clothes for those who care of nature
           </p>
-          <p className="text-gray-500 text-xs font-semibold">Explore</p>
+          <p className="w-[304px] text-sm text-colorSmallText py-[25px] font-semibold">
+            Get{" "}
+            <span className="text-colorTitleText font-extrabold">
+              1 point for 1 kilo of plastic
+            </span>{" "}
+            which you bring to our collection points. Then choose any clothes
+            made of recycled materials from our catalog.
+          </p>
+          {/* View Catalog */}
+          <p className="text-xs font-styleText font-semibold bg-colorPurple px-8 py-5 rounded-lg mr-auto text-black/80 z-10">
+            VIEW CATALOG
+          </p>
+          <div className="-mt-[43px] ml-[7px] w-[155px] h-[50px] bg-transparent border-[1px] border-white/80 rounded-lg mr-auto"></div>
         </div>
-        <p className="text-xs text-gray-400 absolute right-[300px] mt-[50px] font-semibold">
-          © EST.1961
-        </p>
-        <div className="flex flex-row items-center absolute right-[100px] top-[400px]">
-          <img
-            src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
-            className="h-20 w-20 rounded-full flex items-center justify-center object-cover border-[3px] border-white"
-            alt=""
-          />
-          <img
-            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
-            className="h-20 w-20 rounded-full flex items-center justify-center object-cover border-[3px] border-white -ml-4"
-            alt=""
-          />
-          <img
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-            className="h-20 w-20 rounded-full flex items-center justify-center object-cover border-[3px] border-white -ml-4"
-            alt=""
-          />
+
+        {/* Image */}
+        <img
+          src={Girl}
+          className="absolute z-50 w-[550px] ml-[300px] mt-[55px]"
+          alt=""
+        />
+
+        {/* image text */}
+        <div className="absolute z-30 top-[530px] left-[380px] w-[120px] h-[120px] rounded-full bg-colorLightYello flex justify-center items-center text-center">
+          <p className="w-[100px] text-sm text-balck/80 font-extrabold">
+            Dress made from recycled materials
+            <span className="text-balck/60 font-light">16 points</span>
+          </p>
         </div>
-        <div className="absolute top-[600px] flex flex-row w-full justify-between items-start z-50 pr-[150px] ">
-          <div className="w-[200px] flex flex-col gap-5 text-left">
-            <p className="text-gray-400 text-sm">OUR MISSION</p>
-            <p className="text-colorBlack text-lg font-bold">Travel experience with a positive impact</p>
-            <p className="text-xs text-white bg-black px-5 py-2 rounded-full mr-auto">How to start</p>
+
+        {/* Right side */}
+        <div className="absolute right-0 flex flex-col top-[180px] w-[250px] text-left">
+          <div className="flex flex-row items-baseline">
+            <div className="w-8 h-8 px-1 py-1 rounded-full border-[1px] border-colorSmallText flex items-center justify-center mr-2">
+              <MdKeyboardArrowLeft className="text-base text-colorTitleText" />
+            </div>
+            <div className="w-8 h-8 px-2 py-2 rounded-full flex items-center justify-center bg-colorPurple border-colorTitleText">
+              <MdKeyboardArrowRight className="text-base text-balck/80" />
+            </div>
+            <p className="text-5xl font-styleText text-colorTitleText ml-14">
+              01<span className="text-sm text-colorSmallText">/05</span>
+            </p>
           </div>
-          <img src={Man} className="w-[200px] h-[200px] object-cover" alt="" />
-          <img src={Beach} className="w-[200px] h-[200px] object-cover" alt="" />
-          <img src={Tree} className="w-[200px] h-[200px] object-cover" alt="" />
+          <img
+            src={Girl2}
+            className="w-full h-[300px] object-cover bg-colorLightYello mt-4 rounded-l-md"
+            alt=""
+          />
+          <p className="text-colorLightYello text-sm font-bold pt-[10px]">
+            Violet striped dress
+          </p>
+          <p className="text-colorSmallText text-sm font-bold">12 points</p>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="absolute top-[720px] w-full right-0 flex flex-row justify-between px-[80px]">
+          <div className="flex flex-row gap-5 items-center">
+            <ImLocation className="text-3xl text-colorLightYello" />
+            <div className="flex flex-col text-left">
+              <p className="text-sm font-semibold text-colorTitleText">
+                The nearest plastic collection point
+              </p>
+              <p className="text-xs text-colorSmallText font-bold">
+                5542 Thunderbird La Jolla, California
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-5 items-center">
+            <p className="text-colorLightYello text-sm font-medium">
+              <span className="textsm text-colorTitleText font-bold">
+                1 extra point
+              </span>{" "}
+              for sharing
+            </p>
+            <BsFacebook className="text-colorLightYello text-xl" />
+            <AiFillGoogleCircle className="text-colorLightYello text-xl" />
+            <AiFillInstagram className="text-colorLightYello text-xl" />
+          </div>
         </div>
       </div>
     </div>

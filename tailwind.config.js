@@ -4,10 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        styleText: ["Ephesis", "cursive"],
+        styleText: ["Merriweather", "serif"],
       },
       colors: {
-        colorBlack: "#1d1e1b",
+        colorGreen: "#61785d",
+        colorBrown: "#a88867",
+        colorPurple: "#e5d5ff",
+        colorLightYello: "#fdf8ec",
+        colorSmallText: "#d9e7d7",
+        colorTitleText: "#fdfffd",
       },
     },
   },
