@@ -3,13 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        styleText: ["Ephesis", "cursive"],
+      },
       colors: {
-        colorDarkBlue: "#1b1e48",
-        colorPink: "#ff4879",
-        colorSmallText: "#6e6d80",
-        colorYelloIcon: "#e9ab65",
-        colorPinkIcon: "#d56d87",
-        colorBlueIcon: "#465e9f",
+        colorBlack: "#1d1e1b",
       },
     },
   },
