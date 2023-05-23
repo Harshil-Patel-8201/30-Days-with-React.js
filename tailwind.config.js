@@ -4,15 +4,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        styleText: ["Merriweather", "serif"],
+        subText: ["Jost", "sans-serif"],
       },
       colors: {
-        colorBlack: "#222429",
-        colorBlue: "#3481EF",
-        colorRed: "#FF4E00",
-        colorYello: "#F7DF1E",
-        colorgray: "#979797",
-        colorWhite: "#F5F6F6",
+        colorBackground: "#143d48",
+        colorRed: "#8f282c",
+        colorRedGredient1: "#822127",
+        colorRedGredient2: "#69181d",
+        colorRedGredient3: "#490b0e",
+        colorGold: "#e9d2b8",
+        colorBorder: "#6a7875",
+        colorBackgroundDark: "#12282e",
+        colorLightWhite: "#fff9f2",
       },
     },
   },
