@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Day-14 : Precious Web Site Design
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/46d0cb92-090e-4031-81d6-3fc86205df13)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
