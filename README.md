@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# 30 Days with React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Day-1 : Soccer Player
+![image](https://user-images.githubusercontent.com/83079592/237040035-078bd7b8-3cb8-4bd9-b639-9a05b4702f7b.png)
 
-## Available Scripts
+## Day-2 : Interior Designer
+![image](https://user-images.githubusercontent.com/83079592/237076823-4d3e1ab2-ab28-4d16-9447-5642a75e5819.png)
 
-In the project directory, you can run:
+## Day-3 : OK - Energy Drink
+![image](https://user-images.githubusercontent.com/83079592/238186017-53b9f47e-3952-467b-a824-1b3992508754.png)
 
-### `npm start`
+## Day-4 : Etalon Jackets
+![image](https://user-images.githubusercontent.com/83079592/238532049-6b0e5970-1cc5-40ad-9a7e-486efcd9415f.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Day-5 : Lord - Man's Fashion Studio
+![image](https://user-images.githubusercontent.com/83079592/238643052-18068f4a-bf02-44ee-a4dd-4c4b6583fdf9.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Day-6 : rent - Rent the best cars
+![image](https://user-images.githubusercontent.com/83079592/238896319-8ac5ae99-a76b-489a-9d08-1c748a101be9.png)
 
-### `npm test`
+## Day-7 : Autumn Collection
+![image](https://user-images.githubusercontent.com/83079592/239139255-f4483811-f6bb-4782-bf14-0cf01a8fa23b.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Day-8 : Finced
+![image](https://user-images.githubusercontent.com/83079592/239429828-0249424b-7021-4314-b4b8-9a6692f1a9c3.png)
 
-### `npm run build`
+## Day-9 : Battle Peer
+![image](https://user-images.githubusercontent.com/83079592/239472209-fd16536b-4478-43b3-9fea-2cabd42f34d6.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Day-10 : Fitness website
+![image](https://user-images.githubusercontent.com/83079592/239485623-1c67bf49-76be-49f4-be80-2c6124f4cc59.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Day-11 : Adventure Website
+![image](https://user-images.githubusercontent.com/83079592/239676604-56f4ef9f-16be-4116-a780-dbb39cf1e1da.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Day-12 : FREECYCLE cloths
+![image](https://user-images.githubusercontent.com/83079592/239685295-a23df93d-e6cb-45e1-8ff3-d682cd5590a0.png)
 
-### `npm run eject`
+## Day-13 : MR - Stock Vectors
+![image](https://user-images.githubusercontent.com/83079592/239870127-519a3d28-56b0-4867-baae-18b01f27c786.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Day-14 : Precious Web Site Design
+![image](https://user-images.githubusercontent.com/83079592/240215084-46d0cb92-090e-4031-81d6-3fc86205df13.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Day-15: INTERIORLABS - website design
+![image](https://user-images.githubusercontent.com/83079592/240487674-80ac18b4-10fb-4018-ad32-d3988f6f4f15.png)
