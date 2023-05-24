@@ -1,116 +1,134 @@
 import React from "react";
-import { FiMenu } from "react-icons/fi";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
-import Dimond from "../assets/dimond.png";
-import { HiArrowNarrowRight } from "react-icons/hi";
-import Brand from "../assets/brand.png";
-import Ring from "../assets/ring.png";
-import Lady1 from "../assets/lady1.png";
-import Lady from "../assets/lady.png";
-import Jewellery from "../assets/jewellery.png"
+import YelloSofa from "../assets/yello_sofa.jpg";
+import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineGoogle } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import ManChild from "../assets/man_child.jpg";
+import Mobile from "../assets/phone.png";
 
 const Home = () => {
   return (
-    <div className="w-screen h-full bg-colorBackground flex flex-col">
-      {/* Header */}
-      <div className="flex flex-row justify-between items-center px-[80px] border-b-[1px] border-colorBorder">
-        {/* Logo */}
-        <p className="uppercase text-colorGold text-2xl tracking-wider mr-16">
-          Precious
-        </p>
-        <div className="flex items-center justify-center rounded-full border-[1px] border-colorBorder">
-          <FiMenu className="text-colorGold text-[80px] px-5 py-5" />
-        </div>
-        <div className="flex flex-row gap-4 text-colorGold text-sm font-subText">
-          <p>Collection</p>
-          <p>Brands</p>
-          <p>Program</p>
-        </div>
-      </div>
-
-      {/* Jewelry Reimagined */}
-      <div className="flex flex-row justify-between">
-        {/* Pic */}
-        <div className="w-full flex flex-row items-center border-b-[1px] border-colorBorder py-10 gap-10 px-[80px]">
-          <div className="flex flex-col items-center">
-            <img
-              src={Lady1}
-              className="w-[120px] h-[120px] object-contain mt-10 border-b-[1px] border-colorBorder"
-              alt=""
-            />
-            <div className="flex flex-row py-2 items-center">
-              <VscDebugBreakpointLog className="text-sm text-colorGold" />
-              <VscDebugBreakpointLog className="text-sm text-colorBorder" />
-              <VscDebugBreakpointLog className="text-sm text-colorBorder" />
-            </div>
-          </div>
-          <div className="flex flex-col w-[10px] text-left text-colorGold gap-4 mt-8">
-            <p className="text-4xl">12.01</p>
-            <p className="text-xs font-subText text-colorGold/40">
-              ELISABETH WALSH
+    <div className="w-screen h-[800px] flex flex-row">
+      {/* Black */}
+      <div className="relative w-full h-full flex flex-col bg-black">
+        {/* Header */}
+        <div className="flex flex-row justify-between px-[30px] py-[30px] items-center">
+          <div className="flex flex-row gap-14 items-center">
+            <p className="flex flex-row text-white font-bold text-sm">
+              INTERIOR<span className="text-colorYello">LABS</span>
             </p>
+            <div className="flex flex-row gap-5 text-xs text-white/70">
+              <p>Services</p>
+              <p>Clients</p>
+              <p>About us</p>
+              <p>Portfolio</p>
+              <p>Mobile app</p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-3 items-center">
+            <div className="bg-white/70 p-[5px] flex justify-center items-center rounded-full text-xs">
+              <BsInstagram />
+            </div>
+            <div className="bg-white/70 p-[5px] flex justify-center items-center rounded-full text-xs">
+              <AiOutlineGoogle />
+            </div>
+            <div className="bg-white/70 p-[5px] flex justify-center items-center rounded-full text-xs">
+              <FaFacebookF />
+            </div>
           </div>
         </div>
 
-        {/* Dimond */}
-        <div className="w-full border-[1px] border-colorBorder flex flex-col rounded-t-full text-center -ml-24 py-16">
-          <img
-            src={Dimond}
-            className="w-[100px] h-[100px] object-contain mx-auto"
-            alt=""
-          />
-          <p className="text-colorGold text-5xl tracking-wider">Jewelry</p>
-          <p className="text-colorGold text-5xl tracking-wider">Reimagined</p>
+        <div className="w-screen z-20 absolute top-[100px] left-[50px] flex flex-col text-white font-medium text-[90px] leading-[100px] text-left">
+          <p className="text-colorYello">We create</p>
+          <p className="ml-[180px]">more than</p>
+          <p className="ml-[360px]">just interior</p>
         </div>
 
-        {/* Brand */}
-        <div className="w-full flex flex-col justify-center items-center mt-[110px]">
-          <div className="h-10 w-10 bg-colorRed rotate-45 flex justify-center items-center -mb-6">
-            <HiArrowNarrowRight className="text-colorGold -rotate-45 text-lg" />
+        {/* Let's talk */}
+        <div className="absolute -left-[100px] top-[220px] flrx justify-center items-center border-[2px] border-white/70 rounded-full px-[150px] py-[200px]">
+          <div className="flex flex-row items-center">
+            <div className="w-8 h-8 rounded-full bg-colorYello"></div>
+            <HiArrowLongRight className="text-4xl text-white -ml-3" />
+            <p className="text-white text-sm ml-3">LET'S TALK</p>
           </div>
-          <div className="flex flex-col justify-center items-center border-[1px] border-colorBorder rounded-t-full">
-            <img src={Brand} className="w-[220px] p-[50px]" alt="" />
+        </div>
+
+        {/* Bottom Portfolio */}
+        <div className="absolute bottom-0 z-10 w-full h-[300px] flex flex-row bg-white">
+          {/* Man & Child */}
+          <img src={ManChild} className="w-full h-full object-cover" alt="" />
+          <div className="w-full h-full flex flex-row">
+            {/* Text */}
+            <div className="w-full flex flex-col">
+              <div className="flex flex-row items-center gap-3 pt-[20px]">
+                <div className="w-4 h-3 bg-colorYello"></div>
+                <p className="text-colorBlack text-sm font-semibold">
+                  PHILOSOPHY
+                </p>
+              </div>
+              <p className="text-colorBlack/60 text-xs text-left px-[27px] pt-[15px]">
+                We create a space where people can control every parameter they
+                need. The relationship between form and function is at the heart
+                of our philosophy.
+              </p>
+              <p className="text-colorBlack flex flex-row text-xs items-center gap-3 mt-[110px] px-[27px]">
+                About us{" "}
+                <span>
+                  <HiArrowLongRight className="text-xl" />
+                </span>
+              </p>
+            </div>
+
+            {/* Mobile */}
+            <div className="w-full">
+              <img src={Mobile} className="w-full h-full object-cover" alt="" />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Ring Lady */}
-      <div className="flex flex-row justify-between">
-        {/* Ring */}
-        <div className="w-full flex flex-col justify-start items-center px-[8px] py-[70px]">
-          <div className="w-[165px] h-[270px] rounded-full bg-colorLightWhite flex flex-col justify-center items-center z-20 -ml-10">
-            <img
-              src={Ring}
-              className="w-[300px] h-[250px] object-cover"
-              alt=""
-            />
+      {/* Photo */}
+      <div className="w-[630px] h-full flex flex-col">
+        {/* Image */}
+        <div className="relative">
+          <img src={YelloSofa} className="w-full h-[600px]" alt="" />
+          <div className="absolute flex flex-row gap-5 bottom-5 left-5 text-white text-4xl">
+            <HiArrowLongLeft />
+            <HiArrowLongRight />
           </div>
-          <div className="w-[165px] h-[270px] rounded-full bg-colorBackgroundDark -mt-[270px] ml-[80px]"></div>
-          <p className="text-sm text-colorGold/70 tracking-wider w-[250px] font-subText mt-20 text-justify">
-            One of America's finest venues for fine art, is opening its doors
-            for a jewelry expo
-          </p>
         </div>
 
-        {/* Lady */}
-        <div className="w-full border-x-[1px] border-colorBorder">
-          <div className="mx-5 border-x-[1px] border-t-[1px] border-colorBorder rounded-t-full h-[550px] bg-gradient-to-b from-colorRedGredient1 via-colorRedGredient2 to-colorRedGredient3 flex flex-col gap-5 justify-between">
-            <div className="flex flex-col text-center text-sm text-colorGold font-subText mt-12">
-              <p>TRACE YOUR FAVOURITE MV</p>
-              <p>PIECES FROM CONCEPTION</p>
-              <p>TO COMPLETION.</p>
+        {/* Row Text */}
+        <div className="w-full flex flex-row">
+          <div className="w-full h-[200px] bg-white">
+            <div className="flex flex-col px-[20px] text-colorBlack text-left py-[15px]">
+              <p className="text-5xl font-numberText">16</p>
+              <p className="text-sm font-normal text-colorBlack/70">
+                parameters to regulate in our mobile app
+              </p>
+              <p className="flex flex-row text-sm items-center gap-3 mt-14">
+                More about app{" "}
+                <span>
+                  <HiArrowLongRight className="text-xl" />
+                </span>
+              </p>
             </div>
-            <img src={Lady} className="w-[350px] mx-auto -mt-12" alt="" />
           </div>
-        </div>
-
-        {/* Jewellery */}
-        <div className="w-full flex flex-col">
-          <div className="mx-auto w-[220px] h-[200px] rounded-b-full bg-colorBackgroundDark mt-1 flex justify-center items-center">
-            <img src={Jewellery} className="w-[150px] mt-14" alt="" />
+          <div className="w-full h-[200px] bg-colorYello">
+            <div className="flex flex-col px-[20px] text-colorBlack text-left py-[15px]">
+              <p className="text-5xl font-numberText">263</p>
+              <p className="text-sm font-normal text-colorBlack/70">
+                happy families
+              </p>
+              <p className="flex flex-row text-sm items-center gap-3 mt-[75px]">
+                Our portfolio{" "}
+                <span>
+                  <HiArrowLongRight className="text-xl" />
+                </span>
+              </p>
+            </div>
           </div>
-          <p className="text-3xl w-[230px] text-left text-colorGold tracking-wider font-extralight mx-auto mt-[180px]">Time to make sombody happy!</p>
-          <div className="w-[230px] h-[6px] bg-gradient-to-r from-colorRedGredient2 to-colorRed mx-auto mt-5"></div>
         </div>
       </div>
     </div>
