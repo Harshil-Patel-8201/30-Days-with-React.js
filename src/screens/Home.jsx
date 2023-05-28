@@ -1,134 +1,98 @@
 import React from "react";
-import YelloSofa from "../assets/yello_sofa.jpg";
-import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
-import { BsInstagram } from "react-icons/bs";
-import { AiOutlineGoogle } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
-import ManChild from "../assets/man_child.jpg";
-import Mobile from "../assets/phone.png";
+import Logo from "../assets/logo.png";
+import Diamond from "../assets/diamond.png";
+import StyleBg from "../assets/styleBg.jpg";
+import Women from "../assets/women.png" 
+import {HiOutlineArrowUturnRight} from "react-icons/hi2"
 
 const Home = () => {
   return (
-    <div className="w-screen h-[800px] flex flex-row">
-      {/* Black */}
-      <div className="relative w-full h-full flex flex-col bg-black">
-        {/* Header */}
-        <div className="flex flex-row justify-between px-[30px] py-[30px] items-center">
-          <div className="flex flex-row gap-14 items-center">
-            <p className="flex flex-row text-white font-bold text-sm">
-              INTERIOR<span className="text-colorYello">LABS</span>
-            </p>
-            <div className="flex flex-row gap-5 text-xs text-white/70">
-              <p>Services</p>
-              <p>Clients</p>
-              <p>About us</p>
-              <p>Portfolio</p>
-              <p>Mobile app</p>
-            </div>
-          </div>
-          <div className="flex flex-row gap-3 items-center">
-            <div className="bg-white/70 p-[5px] flex justify-center items-center rounded-full text-xs">
-              <BsInstagram />
-            </div>
-            <div className="bg-white/70 p-[5px] flex justify-center items-center rounded-full text-xs">
-              <AiOutlineGoogle />
-            </div>
-            <div className="bg-white/70 p-[5px] flex justify-center items-center rounded-full text-xs">
-              <FaFacebookF />
-            </div>
-          </div>
+    <div className="w-screen h-full bg-colorBackground flex flex-col px-[50px]">
+      {/* Header */}
+      <div className="w-full flex flex-row justify-between items-center border-[1.5px] rounded-full border-gray-600 my-[30px]">
+        <img src={Logo} className="w-[80px] ml-8" alt="" />
+        <div className="flex flex-row items-center gap-8 text-white/80 text-sm">
+          <p>EXHIBITION</p>
+          <p>ARTISTS</p>
+          <p>PRESS</p>
+          <p>SHOP</p>
         </div>
-
-        <div className="w-screen z-20 absolute top-[100px] left-[50px] flex flex-col text-white font-medium text-[90px] leading-[100px] text-left">
-          <p className="text-colorYello">We create</p>
-          <p className="ml-[180px]">more than</p>
-          <p className="ml-[360px]">just interior</p>
-        </div>
-
-        {/* Let's talk */}
-        <div className="absolute -left-[100px] top-[220px] flrx justify-center items-center border-[2px] border-white/70 rounded-full px-[150px] py-[200px]">
-          <div className="flex flex-row items-center">
-            <div className="w-8 h-8 rounded-full bg-colorYello"></div>
-            <HiArrowLongRight className="text-4xl text-white -ml-3" />
-            <p className="text-white text-sm ml-3">LET'S TALK</p>
-          </div>
-        </div>
-
-        {/* Bottom Portfolio */}
-        <div className="absolute bottom-0 z-10 w-full h-[300px] flex flex-row bg-white">
-          {/* Man & Child */}
-          <img src={ManChild} className="w-full h-full object-cover" alt="" />
-          <div className="w-full h-full flex flex-row">
-            {/* Text */}
-            <div className="w-full flex flex-col">
-              <div className="flex flex-row items-center gap-3 pt-[20px]">
-                <div className="w-4 h-3 bg-colorYello"></div>
-                <p className="text-colorBlack text-sm font-semibold">
-                  PHILOSOPHY
-                </p>
-              </div>
-              <p className="text-colorBlack/60 text-xs text-left px-[27px] pt-[15px]">
-                We create a space where people can control every parameter they
-                need. The relationship between form and function is at the heart
-                of our philosophy.
-              </p>
-              <p className="text-colorBlack flex flex-row text-xs items-center gap-3 mt-[110px] px-[27px]">
-                About us{" "}
-                <span>
-                  <HiArrowLongRight className="text-xl" />
-                </span>
-              </p>
-            </div>
-
-            {/* Mobile */}
-            <div className="w-full">
-              <img src={Mobile} className="w-full h-full object-cover" alt="" />
-            </div>
-          </div>
+        <div className="flex flex-row gap-5 items-center">
+          <p className="text-white/80 text-sm">CART</p>
+          <p className="h-14 w-14 text-black bg-colorYello p-3 rounded-full flex justify-center items-center text-2xl font-styleText">
+            0
+          </p>
         </div>
       </div>
 
-      {/* Photo */}
-      <div className="w-[630px] h-full flex flex-col">
-        {/* Image */}
-        <div className="relative">
-          <img src={YelloSofa} className="w-full h-[600px]" alt="" />
-          <div className="absolute flex flex-row gap-5 bottom-5 left-5 text-white text-4xl">
-            <HiArrowLongLeft />
-            <HiArrowLongRight />
+      {/* Middel part */}
+      <div className="flex flex-row py-[50px] mx-auto">
+        {/* Text */}
+        <div className="h-[580px] w-[380px] bg-colorDark rounded-full flex flex-col  justify-center items-center gap-[60px] z-10 border-colorYello/50 border-2">
+          <img src={Diamond} className="w-7" alt="" />
+          <p className="text-white font-styleText text-7xl">
+            The<p>Gallery</p>
+          </p>
+          <p className="text-black bg-colorYello px-[30px] py-[20px] rounded-full text-sm font-bold">
+            DISCOVER
+          </p>
+        </div>
+
+        {/* bg style */}
+        <div className="relative h-[580px] w-[380px] -ml-10 ">
+          <img
+            src={StyleBg}
+            className="w-full h-full rounded-full border-white/50 border-2"
+            alt=""
+          />
+          <div className="absolute rotate-45 top-[250px] left-[150px] bg-colorDark h-20 w-20 flex justify-center items-center">
+            <p className="text-white -rotate-45 font-styleText text-5xl">&</p>
           </div>
         </div>
 
-        {/* Row Text */}
-        <div className="w-full flex flex-row">
-          <div className="w-full h-[200px] bg-white">
-            <div className="flex flex-col px-[20px] text-colorBlack text-left py-[15px]">
-              <p className="text-5xl font-numberText">16</p>
-              <p className="text-sm font-normal text-colorBlack/70">
-                parameters to regulate in our mobile app
-              </p>
-              <p className="flex flex-row text-sm items-center gap-3 mt-14">
-                More about app{" "}
-                <span>
-                  <HiArrowLongRight className="text-xl" />
-                </span>
-              </p>
-            </div>
+        {/* Women */}
+        <div className="relative h-[580px] w-[380px] -ml-10 z-10 rounded-full border-b-[1.5px] border-r-[1.5px] border-gray-600">
+          <img
+            src={Women}
+            className="absolute bottom-0 right-0 rounded-br-[200px] rounded-l-[200px] w-[580px] h-[580px] object-cover"
+            alt=""
+          />
+          <p className="absolute top-0 right-5 text-white text-5xl text-left  font-styleText">
+            21st. <p>century</p>
+          </p>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="flex flex-row w-full justify-between py-[50px] px-[50px] items-center mb-[10px]">
+        <p className="text-white font-styleText text-left text-3xl">
+          Absolutely unique <p>bodv of work</p>
+        </p>
+        <p className="text-sm text-white/70 w-[400px] text-justify">
+          We creating connections between painting and sculpture in urban
+          settings, our artists adopt a thoroughly innovative approach in
+          artistic fusions in balanced combination of classical and
+          contemporary.
+        </p>
+        <div className="flex flex-row gap-5 items-center">
+          <div className="flex flex-row">
+            <img
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              className="w-16 h-16 object-cover rounded-full"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              className="w-16 h-16 object-cover rounded-full -ml-5"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              className="w-16 h-16 object-cover rounded-full -ml-5"
+              alt=""
+            />
           </div>
-          <div className="w-full h-[200px] bg-colorYello">
-            <div className="flex flex-col px-[20px] text-colorBlack text-left py-[15px]">
-              <p className="text-5xl font-numberText">263</p>
-              <p className="text-sm font-normal text-colorBlack/70">
-                happy families
-              </p>
-              <p className="flex flex-row text-sm items-center gap-3 mt-[75px]">
-                Our portfolio{" "}
-                <span>
-                  <HiArrowLongRight className="text-xl" />
-                </span>
-              </p>
-            </div>
-          </div>
+          <HiOutlineArrowUturnRight className="text-2xl text-colorYello"/>
         </div>
       </div>
     </div>

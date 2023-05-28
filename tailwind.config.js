@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        numberText: ["Jost", "sans-serif"],
+        styleText: ["DM Serif Display", "serif"],
       },
       colors: {
-        colorBlack: "#141414",
-        colorYello: "#ffd400",
-        colorGray: "#9e9e9e",
+        colorBackground: "#2b4241",
+        colorDark: "#131c1c",
+        colorYello: "#f7b941",
       },
     },
   },
