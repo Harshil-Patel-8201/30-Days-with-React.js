@@ -44,3 +44,6 @@
 
 ## Day-15: INTERIORLABS - website design
 ![image](https://user-images.githubusercontent.com/83079592/240487674-80ac18b4-10fb-4018-ad32-d3988f6f4f15.png)
+
+## Day-16 : World - The Gallery
+![image](https://user-images.githubusercontent.com/83079592/241497790-a2510d1c-a3a7-421e-8fe5-35bcea47ab90.png)
