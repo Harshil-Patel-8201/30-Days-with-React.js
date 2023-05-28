@@ -47,3 +47,6 @@
 
 ## Day-16 : World - The Gallery
 ![image](https://user-images.githubusercontent.com/83079592/241497790-a2510d1c-a3a7-421e-8fe5-35bcea47ab90.png)
+
+## Day-17 : WOODSIDE - Home Design
+![image](https://user-images.githubusercontent.com/83079592/241544421-773dd075-a9bf-4ffc-be7c-966560501ad0.png)
