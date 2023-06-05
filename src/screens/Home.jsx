@@ -1,96 +1,115 @@
 import React from "react";
-import { GiDiamonds } from "react-icons/gi";
-import { GoPrimitiveDot } from "react-icons/go";
-import Women from '../assets/women.png'
-import Sofa from '../assets/sofa.png'
-import Apple from "../assets/apple.png"
-import WoodSide from "../assets/woodside_logo.png"
+import Logo from "../assets/logo.png";
+import BigImage from "../assets/balls.png";
+import Arrow from "../assets/arrow.png";
+import ReactPic from "../assets/react.png";
+import Balls from "../assets/balls_mini.png";
+import Sops from "../assets/sops.png";
 
 const Home = () => {
   return (
-    <div className="relative w-screen h-full bg-colorBlack flex flex-col px-[30px]">
-      <GiDiamonds className="absolute z-10 top-[85px] right-[303px] text-colorTitle text-2xl" />
-      <GiDiamonds className="absolute z-10 top-[185px] left-[298px] text-colorTitle text-2xl" />
-      <GiDiamonds className="absolute z-10 top-[630px] left-[30px] text-colorTitle text-2xl" />
-
+    <div className="w-scren h-full bg-white flex flex-col px-[100px] py-[20px]">
       {/* Header */}
-      <div className="w-full flex flex-row border-b-[1px] border-colorText/80 items-center">
-        <div className="w-[100%] flex flex-row justify-between items-center border-r-[1px] border-colorText/80 pr-[70px] py-[30px]">
-          <p className="text-colorTitle text-3xl -tracking-wide">WOODSIDE</p>
-          <div className="flex flex-row gap-8 text-colorText/70 text-sm">
-            <p>About us</p>
-            <p>Lifestyle</p>
-            <p>Boutiques & Staff</p>
-          </div>
+      <div className="flex flex-row w-full justify-between items-center">
+        <img src={Logo} className="w-[70px]" alt="" />
+        <div className="flex flex-row gap-8 text-base text-colorSmallText/80 font-semibold">
+          <p className="text-colorBlack">Home</p>
+          <p>Key Features</p>
+          <p>Pricing</p>
+          <p>Testimonial</p>
+          <p>FAQ</p>
         </div>
-        <div className="w-[30%] flex items-center justify-center text-colorTitle px-[20px]">
-          <p>CONSULT ONLINE NOW</p>
-        </div>
+        <p className="text-sm px-8 py-3 text-white bg-colorBlue rounded-md font-medium">
+          Log in
+        </p>
       </div>
 
-      {/* Home now */}
-      <div className="flex flex-row items-start mx-auto my-[10px] gap-10">
-        <p className="text-colorTitle text-[120px] font-extrabold">HOME</p>
-        <div className="flex flex-col">
-          <p className="text-sm text-colorText/70 text-left mt-10">
-            Online platform for mordern <p>home renovtion</p>
-            <div className="w-full h-[3px] bg-colorTitle mt-2"></div>
+      {/* Text - big image */}
+      <div className="flex flex-row items-center justify-between py-[20px]">
+        {/* Text */}
+        <div className="w-full flex flex-col text-left items-center gap-5">
+          <div className="w-full text-left flex flex-col text-7xl text-colorBlack font-bold">
+            <p>Benefits of</p>
+            <p>regular</p>
+            <p>exercise</p>
+          </div>
+          <div className="w-full text-left flex flex-row items-center gap-3">
+            <div className="w-[60px] h-[4px] bg-colorSmallText/40"></div>
+            <p className="text-colorPink text-3xl">What we Do</p>
+          </div>
+          <p className="w-full text-left text-colorBlack text-sm">
+            At our fitness studio, vou can experience the
+            <p> best level of customer service.</p>
+          </p>
+          <p className="text-left text-base px-8 py-3 text-white bg-colorBlue rounded-md font-semibold mr-auto">
+            Contact Us
           </p>
         </div>
-        <p className="text-colorTitle text-[120px] font-extrabold">NOW</p>
+
+        {/* image */}
+        <img src={BigImage} className="w-[50%]" alt="" />
       </div>
 
-      {/* join as pro */}
-      <div className="flex flex-row my-[50px] justify-between mx-[50px] items-center">
-        <div className="flex flex-col items-center gap-[180px]">
-          <div className="flex flex-row bg-colorDarkGreen rounded-full gap-4 w-[140px] h-[100px] items-center justify-between -rotate-12">
-            <GoPrimitiveDot />
-            <p className="text-base font-semibold uppercase text-colorText ">
-              Join as <p>a pro</p>
+      {/* Bottom Bar */}
+      <div className="w-full h-[230px] bg-colorGray rounded-3xl mb-[20px] flex flex-row justify-between px-[25px] py-[20px]">
+        {/* option */}
+        <div className="flex flex-col text-left w-[230px] px-[20px] h-full justify-between">
+          <img src={Arrow} className="w-[80px]" alt="" />
+          <p className="uppercase text-colorBlack font-bold">QUALITY SERVICE</p>
+          <p className="flex flex-row text-colorSmallText items-center">
+            At our fitness/{""}
+            <p className="text-white bg-colorOrange rounded-full px-[8px] py-[1px]">
+              studio
             </p>
-            <GoPrimitiveDot />
-          </div>
-          <p className="text-left text-colorTitle text-sm">
-            Home Design Ideas
-            <p className="text-colorTitle/40 text-xs">
-              Find interior design inspiration.
+          </p>
+          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-white mr-auto mb-4">
+            Pro
+          </p>
+        </div>
+
+        {/* option */}
+        <div className="flex flex-col text-left w-[230px] px-[20px] rounded-xl bg-white shadow-xl h-full justify-between">
+          <img src={ReactPic} className="w-[80px]" alt="" />
+          <p className="uppercase text-colorBlack font-bold">SPACIOUS GYM</p>
+          <p className="flex flex-row text-colorSmallText items-center">
+            At our fitness/{""}
+            <p className="text-white bg-colorGreen rounded-full px-[8px] py-[1px]">
+              studio
             </p>
           </p>
-        </div>
-        <div className="flex flex-col text-left ">
-          <p className="text-6xl text-colorTitle capitalize ">start</p>
-          <p className="text-6xl text-colorTitle capitalize ">Building</p>
-          <p className="text-6xl text-colorTitle capitalize ">Your</p>
-          <p className="text-6xl text-colorTitle capitalize ">Comfort</p>
-
-          <p className="text-colorText/80 underline text-sm mt-[50px]">
-            Get ideas
+          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-colorGray mr-auto mb-4">
+            Pro
           </p>
         </div>
-        <div className="flex flex-col text-left gap-5 -rotate-12">
-          <div className="relative w-[150px] h-[150px] rounded-3xl bg-neutral-700">
-            <img
-              src={Women}
-              className="absolute bottom-0 w-[150px] h-[170px] object-cover"
-              alt=""
-            />
-          </div>
-          <p className="text=left text-sm text-colorText">
-            OUR <p>DESIGNERS</p>
+
+        {/* option */}
+        <div className="flex flex-col text-left w-[230px] px-[20px]  h-full justify-between">
+          <img src={Balls} className="w-[80px]" alt="" />
+          <p className="uppercase text-colorBlack font-bold">UNIQUE PROGRAMS</p>
+          <p className="flex flex-row text-colorSmallText items-center">
+            At our fitness/{""}
+            <p className="text-white bg-colorGreen rounded-full px-[8px] py-[1px]">
+              studio
+            </p>
+          </p>
+          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-white mr-auto mb-4">
+            Pro
           </p>
         </div>
-      </div>
 
-      {/* Bottom pic bar */}
-      <div className="w-full flex flex-row mb-[50px] mt-[10px]">
-        <img
-          src={Sofa}
-          className="h-[200px] w-[850px] rounded-full object-cover bg-no-repeat bg-bottom"
-          alt=""
-        />
-        <div className="relative flex justify-center items-center w-[33%] h-[200px] rounded-full border-[1px] border-colorText/70">
-          <img src={Apple} className="w-[130px]" alt="" />
-          <img src={WoodSide} className="absolute w-[150px] -top-[72px] right-0" alt="" />
+        {/* option */}
+        <div className="flex flex-col text-left w-[230px] px-[20px]  h-full justify-between">
+          <img src={Sops} className="w-[80px]" alt="" />
+          <p className="uppercase text-colorBlack font-bold">GROUP CLASSES</p>
+          <p className="flex flex-row text-colorSmallText items-center">
+            At our fitness/{""}
+            <p className="text-white bg-colorGreen rounded-full px-[8px] py-[1px]">
+              studio
+            </p>
+          </p>
+          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-white mr-auto mb-4">
+            Pro
+          </p>
         </div>
       </div>
     </div>

@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        styleText: ["DM Serif Display", "serif"],
+        styleText: ["Cabin", "sans-serif"],
       },
       colors: {
-        colorBlack: "#131313",
-        colorTitle: "#fafafa",
-        colorText: "#f9f9f9",
-        colorDarkGreen: "#1d574d",
-        colorYello: "#daa638",
+        colorBlue: "#135ce7",
+        colorGray: "#f3f5f7",
+        colorOrange: "#ff6803",
+        colorGreen: "#5bb47a",
+        colorSmallText: "#6a7579",
+        colorBlack: "#010103",
+        colorPink: "#f26874",
       },
     },
   },
