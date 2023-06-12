@@ -4,16 +4,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        styleText: ["Cabin", "sans-serif"],
+        styleText: ["Rubik", "sans-serif"],
       },
       colors: {
-        colorBlue: "#135ce7",
-        colorGray: "#f3f5f7",
-        colorOrange: "#ff6803",
-        colorGreen: "#5bb47a",
-        colorSmallText: "#6a7579",
-        colorBlack: "#010103",
-        colorPink: "#f26874",
+        colorBlack: "#212222",
+        colorMaroon: "#6B3054",
+        colorViolen: "#5e5caa",
+        colorGray: "#95A9AE",
+        colorOrange: "#DE6220",
+        colorSceen: "#F4C993",
+        colorShadeWhite: "#F9FCFB",
+        colorWhite: "#FFFFFF",
       },
     },
   },

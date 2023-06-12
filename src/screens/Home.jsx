@@ -1,114 +1,131 @@
 import React from "react";
-import Logo from "../assets/logo.png";
-import BigImage from "../assets/balls.png";
-import Arrow from "../assets/arrow.png";
-import ReactPic from "../assets/react.png";
-import Balls from "../assets/balls_mini.png";
-import Sops from "../assets/sops.png";
+import { CgNotes } from "react-icons/cg";
+import { MdOutlineNotificationsNone } from "react-icons/md";
+import { TbNorthStar } from "react-icons/tb";
+import { AiOutlinePlus } from "react-icons/ai";
+import HandMobile from '../assets/hand.png'
+import Piggi from '../assets/piggi.webp'
 
 const Home = () => {
   return (
-    <div className="w-scren h-full bg-white flex flex-col px-[100px] py-[20px]">
+    <div className="w-screen h-screen bg-colorShadeWhite px-[100px]">
       {/* Header */}
-      <div className="flex flex-row w-full justify-between items-center">
-        <img src={Logo} className="w-[70px]" alt="" />
-        <div className="flex flex-row gap-8 text-base text-colorSmallText/80 font-semibold">
-          <p className="text-colorBlack">Home</p>
-          <p>Key Features</p>
+      <div className="w-full flex flex-row justify-between items-center py-[20px]">
+        <p className="text-3xl text-colorBlack font-semibold">bank.c</p>
+        <div className="flex flex-row gap-8 items-center text-sm font-semibold text-colorBlack">
           <p>Pricing</p>
-          <p>Testimonial</p>
-          <p>FAQ</p>
+          <p>Blog</p>
+          <p>Features</p>
+          <p>Contact</p>
         </div>
-        <p className="text-sm px-8 py-3 text-white bg-colorBlue rounded-md font-medium">
-          Log in
-        </p>
+        <div className="flex flex-row items-center gap-5 text-colorBlack">
+          <CgNotes className="text-xl" />
+          <MdOutlineNotificationsNone className="text-2xl" />
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            className="w-10 h-10 rounded-full"
+            alt=""
+          />
+        </div>
       </div>
 
-      {/* Text - big image */}
-      <div className="flex flex-row items-center justify-between py-[20px]">
-        {/* Text */}
-        <div className="w-full flex flex-col text-left items-center gap-5">
-          <div className="w-full text-left flex flex-col text-7xl text-colorBlack font-bold">
-            <p>Benefits of</p>
-            <p>regular</p>
-            <p>exercise</p>
+      {/* Middel part */}
+      <div className="w-full flex flex-row justify-between items-center gap-5 mt-[80px]">
+        {/* First row */}
+        <div className="w-full flex flex-col text-left">
+          <div className="flex flex-row text-colorViolen items-center gap-3 font-semibold">
+            <TbNorthStar />
+            <p>30 Days free trial</p>
           </div>
-          <div className="w-full text-left flex flex-row items-center gap-3">
-            <div className="w-[60px] h-[4px] bg-colorSmallText/40"></div>
-            <p className="text-colorPink text-3xl">What we Do</p>
+          <div className="flex flex-col text-colorBlack text-5xl text-left font-extrabold gap-3 py-[30px]">
+            <p>The Best</p>
+            <p>Payment</p>
+            <p>Exprience</p>
           </div>
-          <p className="w-full text-left text-colorBlack text-sm">
-            At our fitness studio, vou can experience the
-            <p> best level of customer service.</p>
+
+          <p className="text-xs text-colorBlack/50 font-semibold">
+            Make your daily routine easier by managing
+            <p> money and transactions with the Bank Card.</p>
           </p>
-          <p className="text-left text-base px-8 py-3 text-white bg-colorBlue rounded-md font-semibold mr-auto">
-            Contact Us
-          </p>
+
+          <div className="my-[20px] flex flex-row w-full items-center justify-between border-2 border-colorBlack rounded-full">
+            <p className="px-[20px] text-colorBlack/60 text-xs">
+              Enter your email
+            </p>
+            <p className="text-xs text-colorWhite px-[20px] bg-colorBlack py-[15px] rounded-full font-semibold">
+              Get started
+            </p>
+          </div>
+
+          <div className="flex flex-col text-left">
+            <p className="text-colorBlack/60 text-base font-styleText font-semibold">
+              Send Money to
+            </p>
+            <div className="flex flex-row gap-3 mt-[10px]">
+              <div className="flex flex-col justify-center items-center w-[100px] h-[130px] bg-colorBlack rounded-lg gap-5">
+                <div className="bg-colorWhite rounded-full flex justify-center items-center">
+                  <AiOutlinePlus className="text-colorBlack" />
+                </div>
+                <p className="text-colorWhite text-xs text-center">
+                  Add new contact
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center w-[100px] h-[130px] bg-colorShadeWhite shadow-lg rounded-lg gap-5 px-[20px]">
+                <div className="flex justify-center items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                    className="w-[40px] h-[40px] rounded-xl"
+                    alt=""
+                  />
+                </div>
+                <p className="text-colorBlack text-xs text-center">
+                  Steve Donald
+                </p>
+              </div>
+              <div className="flex flex-col justify-center items-center w-[100px] h-[130px] bg-colorShadeWhite shadow-lg rounded-lg gap-5 px-[20px]">
+                <div className="flex justify-center items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+                    className="w-[40px] h-[40px] rounded-xl object-cover"
+                    alt=""
+                  />
+                </div>
+                <p className="text-colorBlack text-xs text-center">
+                  Nahai Nolan
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* image */}
-        <img src={BigImage} className="w-[50%]" alt="" />
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="w-full h-[230px] bg-colorGray rounded-3xl mb-[20px] flex flex-row justify-between px-[25px] py-[20px]">
-        {/* option */}
-        <div className="flex flex-col text-left w-[230px] px-[20px] h-full justify-between">
-          <img src={Arrow} className="w-[80px]" alt="" />
-          <p className="uppercase text-colorBlack font-bold">QUALITY SERVICE</p>
-          <p className="flex flex-row text-colorSmallText items-center">
-            At our fitness/{""}
-            <p className="text-white bg-colorOrange rounded-full px-[8px] py-[1px]">
-              studio
-            </p>
-          </p>
-          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-white mr-auto mb-4">
-            Pro
-          </p>
+        {/* Second Row */}
+        <div className="relative w-full">
+          <img
+            src={HandMobile}
+            className="absolute w-[800px] h-[600px] object-cover z-50"
+            alt=""
+          />
+          <div className="w-[300px] h-[500px] rounded-t-full bg-slate-500"></div>
         </div>
 
-        {/* option */}
-        <div className="flex flex-col text-left w-[230px] px-[20px] rounded-xl bg-white shadow-xl h-full justify-between">
-          <img src={ReactPic} className="w-[80px]" alt="" />
-          <p className="uppercase text-colorBlack font-bold">SPACIOUS GYM</p>
-          <p className="flex flex-row text-colorSmallText items-center">
-            At our fitness/{""}
-            <p className="text-white bg-colorGreen rounded-full px-[8px] py-[1px]">
-              studio
-            </p>
+        {/* Third Row */}
+        <div className="w-[400px] flex flex-col text-left">
+          <img src={Piggi} className="w-[300px]" alt="" />
+          <p className="text-colorBlack text-2xl font-semibold">
+            World Class <p>Experts</p>
           </p>
-          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-colorGray mr-auto mb-4">
-            Pro
-          </p>
-        </div>
 
-        {/* option */}
-        <div className="flex flex-col text-left w-[230px] px-[20px]  h-full justify-between">
-          <img src={Balls} className="w-[80px]" alt="" />
-          <p className="uppercase text-colorBlack font-bold">UNIQUE PROGRAMS</p>
-          <p className="flex flex-row text-colorSmallText items-center">
-            At our fitness/{""}
-            <p className="text-white bg-colorGreen rounded-full px-[8px] py-[1px]">
-              studio
-            </p>
+          <p className="text-5xl text-colorBlack font-semibold font-styleText mt-[60px]">
+            12k+
           </p>
-          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-white mr-auto mb-4">
-            Pro
+          <p className="text-xs font-semibold text-colorGray">
+            Users already register and signing up for using it.
           </p>
-        </div>
-
-        {/* option */}
-        <div className="flex flex-col text-left w-[230px] px-[20px]  h-full justify-between">
-          <img src={Sops} className="w-[80px]" alt="" />
-          <p className="uppercase text-colorBlack font-bold">GROUP CLASSES</p>
-          <p className="flex flex-row text-colorSmallText items-center">
-            At our fitness/{""}
-            <p className="text-white bg-colorGreen rounded-full px-[8px] py-[1px]">
-              studio
-            </p>
+          <p className="text-5xl text-colorBlack font-semibold font-styleText mt-[60px]">
+            0%
           </p>
-          <p className="text-base text-colorBlack font-bold px-[16px] py-[2px] rounded-full bg-white mr-auto mb-4">
-            Pro
+          <p className="text-xs font-semibold text-colorGray">
+            Zore-percen fee to ny transaction for your daily needs.
           </p>
         </div>
       </div>
