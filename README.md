@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Day-19 : bank.c - Payment Options
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/ea63a498-56b0-41a0-a7f6-156281c2b9e3)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
