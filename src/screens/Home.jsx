@@ -1,132 +1,134 @@
 import React from "react";
-import { CgNotes } from "react-icons/cg";
-import { MdOutlineNotificationsNone } from "react-icons/md";
-import { TbNorthStar } from "react-icons/tb";
-import { AiOutlinePlus } from "react-icons/ai";
-import HandMobile from '../assets/hand.png'
-import Piggi from '../assets/piggi.webp'
+import Logo from "../assets/logo.png";
+import { FiSearch } from "react-icons/fi";
+import { MdFavoriteBorder } from "react-icons/md";
+import { SlHandbag } from "react-icons/sl";
+import Locker from "../assets/locker.png";
+import Triangle from "../assets/triangle.png";
+import Coin from "../assets/coin.png";
+import Ball from "../assets/ball.png";
+import Bag from "../assets/bag.png";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen bg-colorShadeWhite px-[100px]">
+    <div className="h-full w-screen bg-white flex flex-col px-[80px]">
       {/* Header */}
-      <div className="w-full flex flex-row justify-between items-center py-[20px]">
-        <p className="text-3xl text-colorBlack font-semibold">bank.c</p>
-        <div className="flex flex-row gap-8 items-center text-sm font-semibold text-colorBlack">
-          <p>Pricing</p>
-          <p>Blog</p>
-          <p>Features</p>
-          <p>Contact</p>
+      <div className="w-full flex flex-row justify-between items-center py-[20px] ">
+        {/* Logo */}
+        <div className="flex flex-row gap-10 items-center">
+          <img src={Logo} className="w-[100px]" alt="" />
+          <div className="flex flex-row items-center gap-8 text-sm text-colorGray font-medium">
+            <p>Browse</p>
+            <p>3D Assets</p>
+            <p>All-Access Pass</p>
+            <p className="flex flex-row items-center gap-2">
+              Freebies{" "}
+              <p className="text-xs text-white bg-colorGreen px-[8px] py-[2px] rounded-full">
+                new
+              </p>
+            </p>
+          </div>
         </div>
-        <div className="flex flex-row items-center gap-5 text-colorBlack">
-          <CgNotes className="text-xl" />
-          <MdOutlineNotificationsNone className="text-2xl" />
-          <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
-            className="w-10 h-10 rounded-full"
-            alt=""
-          />
+
+        {/* Icons */}
+        <div className="flex flex-row gap-5 items-center text-xl text-colorGray">
+          <FiSearch />
+          <MdFavoriteBorder />
+          <SlHandbag />
+          <div className="relative">
+            <div className="absolute top-0 right-0 h-[14px] w-[14px] rounded-full bg-colorOrange border-[3px] border-white"></div>
+            <img
+              src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHVzZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              className="h-[35px] w-[35px] rounded-full object-cover object-top"
+              alt=""
+            />
+          </div>
         </div>
       </div>
 
-      {/* Middel part */}
-      <div className="w-full flex flex-row justify-between items-center gap-5 mt-[80px]">
-        {/* First row */}
-        <div className="w-full flex flex-col text-left">
-          <div className="flex flex-row text-colorViolen items-center gap-3 font-semibold">
-            <TbNorthStar />
-            <p>30 Days free trial</p>
-          </div>
-          <div className="flex flex-col text-colorBlack text-5xl text-left font-extrabold gap-3 py-[30px]">
-            <p>The Best</p>
-            <p>Payment</p>
-            <p>Exprience</p>
-          </div>
-
-          <p className="text-xs text-colorBlack/50 font-semibold">
-            Make your daily routine easier by managing
-            <p> money and transactions with the Bank Card.</p>
-          </p>
-
-          <div className="my-[20px] flex flex-row w-full items-center justify-between border-2 border-colorBlack rounded-full">
-            <p className="px-[20px] text-colorBlack/60 text-xs">
-              Enter your email
-            </p>
-            <p className="text-xs text-colorWhite px-[20px] bg-colorBlack py-[15px] rounded-full font-semibold">
-              Get started
-            </p>
-          </div>
-
-          <div className="flex flex-col text-left">
-            <p className="text-colorBlack/60 text-base font-styleText font-semibold">
-              Send Money to
-            </p>
-            <div className="flex flex-row gap-3 mt-[10px]">
-              <div className="flex flex-col justify-center items-center w-[100px] h-[130px] bg-colorBlack rounded-lg gap-5">
-                <div className="bg-colorWhite rounded-full flex justify-center items-center">
-                  <AiOutlinePlus className="text-colorBlack" />
-                </div>
-                <p className="text-colorWhite text-xs text-center">
-                  Add new contact
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center w-[100px] h-[130px] bg-colorShadeWhite shadow-lg rounded-lg gap-5 px-[20px]">
-                <div className="flex justify-center items-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                    className="w-[40px] h-[40px] rounded-xl"
-                    alt=""
-                  />
-                </div>
-                <p className="text-colorBlack text-xs text-center">
-                  Steve Donald
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center w-[100px] h-[130px] bg-colorShadeWhite shadow-lg rounded-lg gap-5 px-[20px]">
-                <div className="flex justify-center items-center">
-                  <img
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
-                    className="w-[40px] h-[40px] rounded-xl object-cover"
-                    alt=""
-                  />
-                </div>
-                <p className="text-colorBlack text-xs text-center">
-                  Nahai Nolan
-                </p>
-              </div>
+      {/* Locker Row */}
+      <div className="w-full flex flex-row justify-between items-center">
+        {/* Locker */}
+        <div className="w-[350px] relative">
+          <div className="w-full h-[480px] rounded-2xl bg-gradient-to-b from-colorGredientStart to-colorGredientEnd flex justify-center items-center my-[40px]">
+            <img src={Locker} className=" w-[200px]" alt="" />
+            <img
+              src={Triangle}
+              className="absolute w-[60px] top-[70px] left-[60px]"
+              alt=""
+            />
+            <img
+              src={Ball}
+              className="absolute w-[40px] top-[120px] -right-[20px]"
+              alt=""
+            />
+            <img
+              src={Coin}
+              className="absolute w-[60px] bottom-[70px] left-[80px]"
+              alt=""
+            />
+            <div className="absolute bottom-8 flex flex-row px-[40px] items-center bg-white rounded-lg shadow-lg w-[120px] h-[25px] justify-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-colorOrange/20"></div>
+              <div className="h-2 w-2 rounded-full bg-colorOrange"></div>
+              <div className="h-2 w-2 rounded-full bg-colorOrange/20"></div>
             </div>
           </div>
         </div>
 
-        {/* Second Row */}
-        <div className="relative w-full">
-          <img
-            src={HandMobile}
-            className="absolute w-[800px] h-[600px] object-cover z-50"
-            alt=""
-          />
-          <div className="w-[300px] h-[500px] rounded-t-full bg-slate-500"></div>
+        {/* Text */}
+        <div className="w-[50%] flex flex-col gap-[50px]  text-left">
+          <p className="text-6xl text-colorBlack font-medium">
+            Access 6.9M+ Vector Icons & Illustrations
+          </p>
+          <p className="w-[470px] text-sm text-colorGray font-medium">
+            Download free icons and stickers for your projects. Resources made
+            by and for pro designers.
+          </p>
+          <div className="w-full flex flex-row gap-10 items-center">
+            <p className="text-sm text-white bg-colorOrange px-[50px] py-[15px] rounded-full font-medium">
+              Join now
+            </p>
+            <p className="text-sm text-colorBlack bg-gradient-to-b from-slate-200/60 to-colorWhiteBackground  px-[50px] py-[15px] rounded-full font-medium">
+              Discover
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="w-full h-[200px] border-[2px] border-colorBorder rounded-2xl flex flex-row mt-[10px] mb-[30px]">
+        {/* Arrow column */}
+        <div className="w-[110px] flex flex-col border-r-[2px] border-colorBorder">
+          <div className="relative w-full h-full border-b-[2px] border-colorBorder flex items-center justify-center">
+            <IoIosArrowForward className="text-xl text-colorGray" />
+            <p className="absolute top-2 left-2 text-sm text-colorGray font-medium">
+              01
+            </p>
+          </div>
+          <div className="w-full h-full flex items-center justify-center">
+            <IoIosArrowBack className="text-xl text-colorGray" />
+          </div>
         </div>
 
-        {/* Third Row */}
-        <div className="w-[400px] flex flex-col text-left">
-          <img src={Piggi} className="w-[300px]" alt="" />
-          <p className="text-colorBlack text-2xl font-semibold">
-            World Class <p>Experts</p>
-          </p>
+        <div className="w-full flex flex-row justify-between items-center px-[18px]">
+          {/* Text */}
+          <div className="flex flex-col text-left gap-8 px-[30px]">
+            <p className="text-xl text-colorBlack font-semibold">
+              Simple and flexible integration
+            </p>
 
-          <p className="text-5xl text-colorBlack font-semibold font-styleText mt-[60px]">
-            12k+
-          </p>
-          <p className="text-xs font-semibold text-colorGray">
-            Users already register and signing up for using it.
-          </p>
-          <p className="text-5xl text-colorBlack font-semibold font-styleText mt-[60px]">
-            0%
-          </p>
-          <p className="text-xs font-semibold text-colorGray">
-            Zore-percen fee to ny transaction for your daily needs.
-          </p>
+            <p className="text-left text-sm text-colorGray font-medium">
+              Integrate with us and price your product independently.
+              <p>
+                Filter results by license, style or category. Formats: SVG,
+                <p> PNG and many more.</p>
+              </p>
+            </p>
+          </div>
+
+          {/* Image */}
+          <img src={Bag} className="w-[330px] rounded-xl" alt="" />
         </div>
       </div>
     </div>
