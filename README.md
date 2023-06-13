@@ -1,5 +1,7 @@
 # Day-20 : K-ICON - Vector icons
 
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/eb13dc0b-873b-421d-81cd-cc0e7c59f92b)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
