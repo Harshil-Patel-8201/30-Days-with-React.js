@@ -56,3 +56,6 @@
 
 ## Day-19 : bank.c - Payment Options
 ![image](https://user-images.githubusercontent.com/83079592/245045556-ea63a498-56b0-41a0-a7f6-156281c2b9e3.png)
+
+## Day-20 : K-ICON - Vector icons
+![image](https://user-images.githubusercontent.com/83079592/245366559-eb13dc0b-873b-421d-81cd-cc0e7c59f92b.png)
