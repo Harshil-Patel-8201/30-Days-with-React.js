@@ -59,3 +59,6 @@
 
 ## Day-20 : K-ICON - Vector icons
 ![image](https://user-images.githubusercontent.com/83079592/245366559-eb13dc0b-873b-421d-81cd-cc0e7c59f92b.png)
+
+## Day-21 : Virtuality - Landing Page
+![image](https://user-images.githubusercontent.com/83079592/246314478-02c34de8-67e3-4e7d-abbb-596d13aedc50.png)
