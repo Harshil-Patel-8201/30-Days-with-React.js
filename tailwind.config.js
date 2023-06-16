@@ -4,17 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: [],
+        customText: ["Big Shoulders Display", "cursive"],
       },
       colors: {
-        colorGray: "#5c6a78",
-        colorGreen: "#6cb573",
-        colorBlack: "#20261d",
-        colorOrange: "#ef846a",
-        colorBorder: "#e9e9e9",
-        colorGredientEnd: "#f8f5f3",
-        colorGredientStart: "#edeff1",
-        colorWhiteBackground: "#f2f2f2",
+        colorOrange: "#f45836",
+        colorBackground: "#1d181a",
+        colorWhite: "#f0ede2",
+        colorSmallText: "#cfcbc7",
+        colorBorder: "#797476",
       },
     },
   },
