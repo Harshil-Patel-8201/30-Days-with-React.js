@@ -65,3 +65,6 @@
 
 ## Day-22 : Emonti Website
 ![image](https://user-images.githubusercontent.com/83079592/247026154-15f5be2c-b91d-4f21-bdef-f3fa89f5d18c.png)
+
+## Day-23 : ARKT - AI Creator
+![image](https://user-images.githubusercontent.com/83079592/247080993-8434c806-d957-4f7e-abc9-2fff161cb463.png)
