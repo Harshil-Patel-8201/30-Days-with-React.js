@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: ["Big Shoulders Display", "cursive"],
+        customText: ["Cormorant Garamond", "serif"],
       },
       colors: {
-        colorOrange: "#f45836",
-        colorBackground: "#1d181a",
-        colorWhite: "#f0ede2",
-        colorSmallText: "#cfcbc7",
-        colorBorder: "#797476",
+        colorGredientStart: "#3c414f",
+        colorGredientVia: "#6a667e",
+        colorGredientEnd: "#57536e",
+        colorOrange: "#fd8b00",
+        colorDarkGray: "#2b2a3e",
       },
     },
   },
