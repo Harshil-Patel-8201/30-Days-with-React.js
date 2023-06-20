@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: ["Cormorant Garamond", "serif"],
+        customText: ["Bebas Neue", "sans-serif"],
       },
       colors: {
-        colorGredientStart: "#3c414f",
-        colorGredientVia: "#6a667e",
-        colorGredientEnd: "#57536e",
-        colorOrange: "#fd8b00",
-        colorDarkGray: "#2b2a3e",
+        colorBackground: "#dddddd",
+        colorOrange: "#fe8b10",
+        colorWhite: "#f9f9f9",
+        colorTextShade: "#494949",
+        colorBorder: "#999999",
       },
     },
   },

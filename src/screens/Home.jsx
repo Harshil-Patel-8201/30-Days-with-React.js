@@ -1,93 +1,95 @@
 import React from "react";
-import { FiMenu } from "react-icons/fi";
-import { IoPlaySharp } from "react-icons/io5";
-import { ImLocation } from "react-icons/im";
-import { MdArrowOutward } from "react-icons/md";
-import IconLogo from '../assets/digital logo.png'
-import Statue from '../assets/redStatue.png'
+import Logo from "../assets/logo.png";
+import img1 from "../assets/img1.png";
+import blackLogo from "../assets/black logo.png";
+import { ImPlus } from "react-icons/im";
+import Building from "../assets/building.jpg";
+import { ImArrowDownRight } from "react-icons/im";
+import { IoMdPlay } from "react-icons/io";
 
 const Home = () => {
   return (
-    <div className="w-screen h-full bg-gradient-to-tl from-colorGredientStart via-colorGredientVia to-colorGredientEnd flex flex-col px-[80px]">
-      {/* Header */}
-      <div className="w-full flex flex-row items-center justify-between py-[30px] border-b-[1px] border-white/20">
-        <div className="flex flex-row items-center gap-10 uppercase text-white text-sm">
-          <p>cases</p>
-          <p>security</p>
-          <p>about</p>
+    <div className="w-screen h-full bg-colorBackground flex flex-col px-[80px]">
+      {/* Header*/}
+      <div className="flex flex-row w-full items-center justify-between border-b-[1px] border-colorBorder py-[20px]">
+        <img src={Logo} className="w-[80px]" alt="" />
+        <div className="flex flex-row items-center gap-14 capitalize text-sm text-colorTextShade/80 font-medium">
+          <p className="text-black">home</p>
+          <p>About</p>
+          <p>prices</p>
+          <p>gallery</p>
         </div>
-        <p className="text-xl text-white uppercase font-medium">emonti</p>
-        <div className="flex flex-row items-center gap-10">
-          <p className="uppercase text-colorDarkGray px-5 py-2 bg-white text-xs font-semibold">
-            CONTACT
+        <div className="flex flex-row gap-5 items-center">
+          <div className="h-6 w-[1.5px] bg-black"></div>
+          <p className="text-black uppercase text-sm font-extrabold">
+            get started
           </p>
-          <FiMenu className="text-xl text-white" />
         </div>
       </div>
-      {/* Main Objects */}
-      <div className="w-full h-full flex flex-row relative">
-        {/* First Column */}
-        <div className="w-full flex flex-col justify-start">
-          <div className="flex flex-col my-28 w-[140px]">
-            <img
-              src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-              className="w-[140px] h-[210px] object-cover"
-              alt=""
-            />
-            <div className="flex justify-center items-center w-10 h-10 bg-colorOrange rounded-full ml-[120px] -mt-20">
-              <IoPlaySharp className="ml-1 text-white text-sm" />
-            </div>
-            <p className="mt-20 uppercase text-base text-white font-bold text-left">
-              - Get to know the team better
+
+      {/* first row */}
+      <div className="flex flex-row w-full justify-between">
+        {/* Text */}
+        <div className="flex flex-col text-left text-black text-9xl font-extrabold font-customText mt-28">
+          <div className="w-10 h-10 bg-colorOrange ml-[267px] -mb-[9px]"></div>
+          <p>new ai </p>
+          <p>creator</p>
+        </div>
+
+        {/* Pics */}
+        <div className="flex flex-row gap-3 mt-20">
+          <img src={img1} className="w-[320px] h-[450px]" alt="" />
+          <div className="h-[105px] w-[100px] bg-gradient-to-b from-white to-transparent flex flex-col justify-center items-center gap-5">
+            <img src={blackLogo} className="w-[50px]" alt="" />
+            <p className="text-black text-sm font-semibold uppercase">
+              digital <p>awards</p>
             </p>
           </div>
-          <div className="w-full flex flex-row gap-5 my-[30px] items-center">
-            <div className="w-12 h-12 bg-colorDarkGray flex justify-center items-center">
-              <MdArrowOutward className="text-xl text-white" />
+        </div>
+      </div>
+
+      {/* Second Section */}
+      <div className="flex flex-row w-full">
+        <div className="w-[688px] bg-colorWhite h-[380px] flex flex-row justify-between relative">
+          {/* Text */}
+          <div className="flex flex-col w-[320px] p-[50px] h-full justify-between">
+            <div className="flex flex-row gap-3 items-center">
+              <p className="text-6xl text-black font-extrabold">2000</p>
+              <ImPlus className="text-3xl text-colorOrange" />
             </div>
-            <div className="flex flex-col text-left">
-              <p className="text-white text-base font-medium">Appointment</p>
-              <p className="text-white/40 text-base ">Book Now</p>
-            </div>
+            <p className="text-base text-black/80 text-left">
+              AUTOMATICALLY CREATE UNIQUE AND HIGH-QUALITY ILLUSTRATIONS
+            </p>
           </div>
-          <div className="flex flex-col text-left text-white my-16 text-2xl font-bold">
-            <p>TIME TO DEFEND YOUR</p>
-            <p>RIGHTS WITH EXPERIENCED</p>
-            <p>I AWYERS</p>
+
+          {/* Pic */}
+          <img src={Building} alt="" />
+
+          {/* Learn More */}
+          <div className="w-24 h-24 absolute bottom-7 right-[210px] bg-colorOrange rounded-full flex justify-center items-center">
+            <p className="text-black font-semibold p-2">LEARN MORE</p>
           </div>
         </div>
 
-        {/* Second Column */}
-        <div className="absolute w-screen top-[100px] ml-[290px]">
-          <img
-            src={Statue}
-            className="w-[500px] h-[600px] object-contain"
-            alt=""
-          />
-          <div className="w-[300px] h-2 bg-white -mt-[52px] ml-[110px]"></div>
-        </div>
-
-        {/* third Column */}
-        <div className="w-full flex flex-col text-right">
-          <img src={IconLogo} className="w-[100px] my-28 ml-auto mr-6" alt="" />
-          <img
-            src="https://images.unsplash.com/photo-1579419964575-8c5d90b6522b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGJ1aWxkaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-            className="w-[150px] h-[250px] object-cover ml-auto"
-            alt=""
-          />
-          <div className="w-12 h-12 bg-colorDarkGray flex justify-center items-center ml-auto mr-32 -mt-[270px]">
-            <ImLocation className="text-xl text-white" />
+        <div className="flex flex-row w-[430px]">
+          {/* Try it */}
+          <div className="w-[320px] h-[150px] border-[1px] border-colorBorder flex flex-row">
+            <div className="w-full h-full flex justify-center items-center p-3 border-r-[1px] border-colorBorder">
+              <div className="w-full h-full bg-colorOrange flex flex-col text-black text-xl font-extrabold p-3">
+                <p className="mr-auto">TRY IT</p>
+                <p className="mr-auto">FREE</p>
+                <ImArrowDownRight className=" mt-5 ml-auto" />
+              </div>
+            </div>
+            <div className="w-full h-full"></div>
           </div>
-          <p className="text-base text-white ml-auto mr-36 mt-[180px] -rotate-90">
-            Central
-          </p>
-          <p className="text-left my-20 text-white text-base ml-auto">
-            From complex litigation to everyday legal{" "}
-            <p>
-              matters, our dedicated team of lawyers has{" "}
-              <p>the knowledge and experience to deliver</p>
-            </p>
-          </p>
+          <div className="w-[110px] h-[200px] border-[1px] border-colorBorder mt-[150px] flex flex-col gap-5 items-center justify-center p-3">
+            <div className="w-14 h-14 rounded-full bg-gradient-to-b from-white to-transparent flex items-center justify-center">
+              <IoMdPlay className="text-2xl" />
+            </div>
+            <div className="w-5 h-1 bg-black"></div>
+            <p className="text-black text-sm uppercase font-extrabold">see how to work</p>
+          </div>
         </div>
       </div>
     </div>
