@@ -62,3 +62,6 @@
 
 ## Day-21 : Virtuality - Landing Page
 ![image](https://user-images.githubusercontent.com/83079592/246314478-02c34de8-67e3-4e7d-abbb-596d13aedc50.png)
+
+## Day-22 : Emonti Website
+![image](https://user-images.githubusercontent.com/83079592/247026154-15f5be2c-b91d-4f21-bdef-f3fa89f5d18c.png)
