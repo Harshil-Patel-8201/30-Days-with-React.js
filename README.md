@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Day-23 : ARKT - AI Creator
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/8434c806-d957-4f7e-abc9-2fff161cb463)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
