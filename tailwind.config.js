@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: ["Bodoni Moda", "serif"],
+        customText: ["Rancho", "cursive"],
       },
       colors: {
-        colorBackground: "#e9e9e9",
-        colorBlack: "#312925",
-        colorSubText: "#383838",
-        colorRed: "#e02107",
+        colorDarkGray: "#34333c",
+        colorSceen: "#e9d4b2",
+        colorYello: "#ffac32",
+        colorWhiteShade: "#fffbf3",
+        colorLightViolien: "#c2b6c6",
       },
     },
   },
