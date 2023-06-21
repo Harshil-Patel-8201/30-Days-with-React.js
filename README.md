@@ -68,3 +68,6 @@
 
 ## Day-23 : ARKT - AI Creator
 ![image](https://user-images.githubusercontent.com/83079592/247080993-8434c806-d957-4f7e-abc9-2fff161cb463.png)
+
+## Day-24 : Old Tradition Web Site Design
+![image](https://user-images.githubusercontent.com/83079592/247462735-411b64ea-1057-4a9e-bc51-43d3db6ff876.png)
