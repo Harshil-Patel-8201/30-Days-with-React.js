@@ -4,14 +4,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: ["Bebas Neue", "sans-serif"],
+        customText: ["Bodoni Moda", "serif"],
       },
       colors: {
-        colorBackground: "#dddddd",
-        colorOrange: "#fe8b10",
-        colorWhite: "#f9f9f9",
-        colorTextShade: "#494949",
-        colorBorder: "#999999",
+        colorBackground: "#e9e9e9",
+        colorBlack: "#312925",
+        colorSubText: "#383838",
+        colorRed: "#e02107",
       },
     },
   },

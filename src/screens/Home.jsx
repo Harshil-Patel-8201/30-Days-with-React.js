@@ -1,94 +1,115 @@
 import React from "react";
+import { HiMenuAlt4 } from "react-icons/hi";
+import { TfiPlus } from "react-icons/tfi";
 import Logo from "../assets/logo.png";
-import img1 from "../assets/img1.png";
-import blackLogo from "../assets/black logo.png";
-import { ImPlus } from "react-icons/im";
-import Building from "../assets/building.jpg";
-import { ImArrowDownRight } from "react-icons/im";
-import { IoMdPlay } from "react-icons/io";
+import RedFan from "../assets/fan.png";
+import Wave from "../assets/white wave.webp";
+import RedStar from "../assets/red star.png";
+import Model from "../assets/model.png";
+import RedSign from "../assets/red sign.png";
+import BlackSign from "../assets/black sign.png";
+import EggPlate from "../assets/egg.png";
 
 const Home = () => {
   return (
     <div className="w-screen h-full bg-colorBackground flex flex-col px-[80px]">
-      {/* Header*/}
-      <div className="flex flex-row w-full items-center justify-between border-b-[1px] border-colorBorder py-[20px]">
-        <img src={Logo} className="w-[80px]" alt="" />
-        <div className="flex flex-row items-center gap-14 capitalize text-sm text-colorTextShade/80 font-medium">
-          <p className="text-black">home</p>
-          <p>About</p>
-          <p>prices</p>
-          <p>gallery</p>
+      {/* header */}
+      <div className="w-full flex flex-row justify-between py-8 items-center">
+        <HiMenuAlt4 className="text-3xl text-colorBlack" />
+        <img src={Logo} className="w-[150px] ml-20" alt="" />
+        <p className="uppercase px-5 py-2 text-colorSubText border-[1px] border-colorSubText rounded-full text-sm font-medium">
+          contact us
+        </p>
+      </div>
+
+      {/* First row */}
+      <div className="w-full flex flex-row mt-2 justify-between items-center">
+        {/* Fan Section */}
+        <div className="relative w-[300px] h-[320px] border-b-[1px] border-colorSubText/40">
+          <div className="relative w-full h-full">
+            <img
+              src={Wave}
+              className="ml-10 w-[170px] h-[300px] object-cover"
+              alt=""
+            />
+            <div className="ml-10 w-[170px] h-[300px] absolute bg-gradient-to-b from-transparent via-colorBackground/80 to-colorBackground top-0"></div>
+          </div>
+          <img
+            src={RedFan}
+            className="absolute top-0 w-[150px] rotate-45"
+            alt=""
+          />
+          <div className="absolute bottom-10 flex flex-col text-left">
+            <p className="font-customText text-4xl text-colorRed flex flex-row items-center gap-3">
+              120{" "}
+              <span>
+                <TfiPlus className="text-xl" />
+              </span>
+            </p>
+            <p className="text-colorBlack font-medium mt-3">RESTAURANTS</p>
+          </div>
         </div>
-        <div className="flex flex-row gap-5 items-center">
-          <div className="h-6 w-[1.5px] bg-black"></div>
-          <p className="text-black uppercase text-sm font-extrabold">
-            get started
+
+        {/* Text Section */}
+        <div className="w-full flex flex-col ml-[200px]">
+          <div className="w-full flex flex-row items-center text-xl text-[130px] text-colorBlack font-customText leading-[100px] font-medium">
+            <p>M</p>
+            <img src={RedStar} className="w-[120px]" alt="" />
+            <p>TIONS</p>
+          </div>
+          <p className="ml-[120px] text-[130px] text-colorBlack font-customText leading-[110px]">
+            JAPAN
           </p>
         </div>
       </div>
 
-      {/* first row */}
-      <div className="flex flex-row w-full justify-between">
+      {/* Second Row */}
+      <div className="w-full flex flex-row justify-between">
         {/* Text */}
-        <div className="flex flex-col text-left text-black text-9xl font-extrabold font-customText mt-28">
-          <div className="w-10 h-10 bg-colorOrange ml-[267px] -mb-[9px]"></div>
-          <p>new ai </p>
-          <p>creator</p>
+        <div className="flex flex-col text-left">
+          <p className="text-colorBlack font-customText uppercase text-2xl mt-[80px] mb-5">
+            About
+          </p>
+          <p className="text-sm text-colorSubText/70 w-[200px]">
+            Explore a different side of Japan. Meet the locals and discover
+            traditions
+          </p>
+          <p className="flex flex-col justify-center items-center text-center p-30 bg-colorRed rounded-full text-white uppercase w-[100px] h-[100px] my-[80px] font-medium">
+            buy <p>ticket</p>
+          </p>
         </div>
 
-        {/* Pics */}
-        <div className="flex flex-row gap-3 mt-20">
-          <img src={img1} className="w-[320px] h-[450px]" alt="" />
-          <div className="h-[105px] w-[100px] bg-gradient-to-b from-white to-transparent flex flex-col justify-center items-center gap-5">
-            <img src={blackLogo} className="w-[50px]" alt="" />
-            <p className="text-black text-sm font-semibold uppercase">
-              digital <p>awards</p>
+        {/* Model Pic */}
+        <div className="relative w-[500px] h-[500px">
+          <div className="w-[350px] h-[550px] bg-gradient-to-b from-transparent via-red-300/60 to-red-600/60 -mt-10 mx-auto">
+            <img
+              src={Model}
+              className="absolute bottom-0 w-full mx-auto -ml-12"
+              alt=""
+            />
+            <img
+              src={RedSign}
+              className="absolute top-[100px] w-[80px] left-8"
+              alt=""
+            />
+            <img
+              src={BlackSign}
+              className="absolute top-[250px] w-[80px] right-8"
+              alt=""
+            />
+          </div>
+        </div>
+
+        {/* Egg Section */}
+        <div className="w-[300px] h-[300px] bg-white mt-auto">
+          <div className="flex flex-col gap-5 items-center -mt-28">
+            <img src={EggPlate} className="w-[150px]" alt="" />
+            <p className="w-[150px] text-colorBlack text-2xl font-customText uppercase font-medium tracking-tight -mt-3">
+              The best resturent in japan
             </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Second Section */}
-      <div className="flex flex-row w-full">
-        <div className="w-[688px] bg-colorWhite h-[380px] flex flex-row justify-between relative">
-          {/* Text */}
-          <div className="flex flex-col w-[320px] p-[50px] h-full justify-between">
-            <div className="flex flex-row gap-3 items-center">
-              <p className="text-6xl text-black font-extrabold">2000</p>
-              <ImPlus className="text-3xl text-colorOrange" />
-            </div>
-            <p className="text-base text-black/80 text-left">
-              AUTOMATICALLY CREATE UNIQUE AND HIGH-QUALITY ILLUSTRATIONS
+            <p className="uppercase text-colorBlack underline underline-offset-4 decoration-colorRed mt-3">
+              Learn more
             </p>
-          </div>
-
-          {/* Pic */}
-          <img src={Building} alt="" />
-
-          {/* Learn More */}
-          <div className="w-24 h-24 absolute bottom-7 right-[210px] bg-colorOrange rounded-full flex justify-center items-center">
-            <p className="text-black font-semibold p-2">LEARN MORE</p>
-          </div>
-        </div>
-
-        <div className="flex flex-row w-[430px]">
-          {/* Try it */}
-          <div className="w-[320px] h-[150px] border-[1px] border-colorBorder flex flex-row">
-            <div className="w-full h-full flex justify-center items-center p-3 border-r-[1px] border-colorBorder">
-              <div className="w-full h-full bg-colorOrange flex flex-col text-black text-xl font-extrabold p-3">
-                <p className="mr-auto">TRY IT</p>
-                <p className="mr-auto">FREE</p>
-                <ImArrowDownRight className=" mt-5 ml-auto" />
-              </div>
-            </div>
-            <div className="w-full h-full"></div>
-          </div>
-          <div className="w-[110px] h-[200px] border-[1px] border-colorBorder mt-[150px] flex flex-col gap-5 items-center justify-center p-3">
-            <div className="w-14 h-14 rounded-full bg-gradient-to-b from-white to-transparent flex items-center justify-center">
-              <IoMdPlay className="text-2xl" />
-            </div>
-            <div className="w-5 h-1 bg-black"></div>
-            <p className="text-black text-sm uppercase font-extrabold">see how to work</p>
           </div>
         </div>
       </div>
