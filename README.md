@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Day-24 : Old Tradition Web Site Design
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/411b64ea-1057-4a9e-bc51-43d3db6ff876)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
