@@ -71,3 +71,6 @@
 
 ## Day-24 : Old Tradition Web Site Design
 ![image](https://user-images.githubusercontent.com/83079592/247462735-411b64ea-1057-4a9e-bc51-43d3db6ff876.png)
+
+## Day-25 : Modart Website
+![image](https://user-images.githubusercontent.com/83079592/247496288-affacda6-9e9f-4c6e-a0ad-a7b3520037f2.png)
