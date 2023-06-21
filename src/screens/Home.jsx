@@ -82,7 +82,7 @@ const Home = () => {
       </p>
 
       {/* Last Text */}
-      <div className="absolute left-[320px] top-[850px] flex flex-row gap-10 items-end">
+      <div className="absolute left-[320px] top-[800px] flex flex-row gap-10 items-end">
         <div className="flex flex-col text-sm uppercase text-colorSceen text-left">
           <p>ELEVATE YOUR SENSES</p>
           <p>WITH THE CONTEMPORARY ART</p>
