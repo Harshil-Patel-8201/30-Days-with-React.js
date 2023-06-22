@@ -74,3 +74,6 @@
 
 ## Day-25 : Modart Website
 ![image](https://user-images.githubusercontent.com/83079592/247496288-affacda6-9e9f-4c6e-a0ad-a7b3520037f2.png)
+
+## ay-26 : Novaskin Website
+![image](https://user-images.githubusercontent.com/83079592/247853091-0cb43954-7d27-4c4e-9771-555791f1681c.png)
