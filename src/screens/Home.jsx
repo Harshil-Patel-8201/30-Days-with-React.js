@@ -1,93 +1,102 @@
 import React from "react";
-import blackLines from "../assets/black line.png";
-import { FiArrowUpRight } from "react-icons/fi";
-import { RxDotFilled } from "react-icons/rx";
-import Model from "../assets/model.png";
-import Flower from "../assets/flowers.webp";
+import Logo from "../assets/logo.png";
+import { ImPlay3 } from "react-icons/im";
+import Model from "../assets/model.avif";
+import Bin from "../assets/bin.png";
+import Box from "../assets/cream box.png";
+import { AiFillStar } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <div className="w-screen h-[900px] flex flex-row relative">
-      {/* Dark Part */}
-      <div className="w-full h-full bg-colorDarkGray"></div>
-
-      {/* Yello Part */}
-      <div className="w-[45%] h-full bg-colorSceen flex flex-col items-center justify-center">
-        <img src={blackLines} className="w-[250px] mt-[140px]" alt="" />
-        <p className="ml-14 my-10 w-[170px] text-left text-black text-base font-medium">
-          MODART OFFERS A DIVERSE RANGE OF ARTS THAT REFLECT THE CULTURAL AND
-          SOCIAL ISSUES OF OUR TIMES.
-        </p>
-        <div className="flex flex-row items-center my-5 mb-[120px]">
-          <p className="text-base text-black font-semibold underline">
-            Exhibitions
-          </p>
-          <FiArrowUpRight className="text-xl" />
+    <div className="w-screen h-full bg-gradient-to-r from-colorGradient1 via-colorGradient2 to-colorGradient1 flex flex-col px-[70px]">
+      {/* Header */}
+      <div className="w-full flex flex-row items-center justify-between py-[30px]">
+        <div className="flex flex-row gap-8 items-center text-sm uppercase text-white font-medium">
+          <p>products</p>
+          <p>about</p>
         </div>
-        <div className="relative w-[300px] h-[200px] bg-colorWhiteShade">
-          <img
-            src={Model}
-            className="absolute bottom-0 w-[250px] left-5"
-            alt=""
-          />
+        <img src={Logo} className="w-[150px]" alt="" />
+        <div className="flex flex-row gap-8 items-center text-sm uppercase text-white font-medium">
+          <p>ROUTINES</p>
+          <p>JOURNAL</p>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="w-full h-full absolute flex flex-col px-[80px]">
-        {/* Header */}
-        <div className="w-full flex flex-row justify-between py-[40px] items-center">
-          <p className="text-xl font-extrabold text-white">MODART</p>
-          <div className="flex flex-row items-center gap-10 text-sm text-colorWhiteShade/60">
-            <p className="text-white underline">Home</p>
-            <p>About us</p>
-            <p>Tickets</p>
-          </div>
-          <p className="text-white bg-black px-8 py-3 text-sm">Contact us</p>
-        </div>
-
-        {/* Main Design */}
-        <div className="w-full relative">
-          <p className="absolute top-7 left-[100px] text-colorSceen text-8xl font-customText font-extrabold tracking-wide text-left z-50">
-            CONTEMPORARY <p> ART</p>
-          </p>
-        </div>
-
-        {/* Flowers */}
-        <div className="absolute top-[320px] left-[300px] flex flex-row gap-5">
-          <img src={Flower} className="w-[300px] h-[380px] object-" alt="" />
-          <div className="w-[300px] h-[380px] bg-colorYello flex flex-col justify-center items-center text-colorDarkGray">
-            <p className="text-base font-medium">Yearly</p>
-            <p className="text-xl font-semibold tracking-tight">
-              Works exhibited
-            </p>
-            <p className="text-6xl font-medium my-[70px]">128k</p>
-            <div className="flex flex-row text-sm text-colorDarkGray items-center">
-              <RxDotFilled />
-              <RxDotFilled className="text-3xl" />
-              <RxDotFilled />
+      {/* Main Part */}
+      <div className="relative w-full flex flex-row justify-between mt-16 mb-10">
+        {/* Left Part */}
+        <div className="w-full flex flex-col">
+          <div className="relative w-[170px] h-[110px] flex justify-center items-center">
+            <img
+              src="https://images.unsplash.com/photo-1491147334573-44cbb4602074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGJhbmFuYSUyMGxlYWZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              className="w-full h-full object-cover"
+              alt=""
+            />
+            <div className="absolute w-10 h-10 bg-white rounded-full flex justify-center items-center">
+              <ImPlay3 className="text-black ml-1" />
             </div>
           </div>
+          <div className="flex flex-col text-left text-white text-8xl tracking-tighter font-customText my-20">
+            <p>Gene</p>
+            <p>skincare</p>
+            <p>treatment</p>
+            <p className="text-sm underline underline-offset-4 font-sans tracking-normal font-semibold mt-10">
+              LEARN MORE
+            </p>
+          </div>
+          <div className="flex flex-col mt-10">
+            <p className="text-xs text-white px-8 py-3 border-[1px] border-white rounded-full mr-auto my-1">
+              🫐 Clinically-proven
+            </p>
+            <div className="flex flex-row">
+              <p className="text-xs text-white px-8 py-3 border-[1px] border-white rounded-full mr-2 my-1">
+                🥒 Vegan formulas
+              </p>
+              <p className="text-xs text-black px-8 py-3 bg-white rounded-full mr-auto my-1">
+                🧬 DNA-based
+              </p>
+            </div>
+            <p className="text-xs text-white px-8 py-3 border-[1px] border-white rounded-full mr-auto my-1">
+              🌿 Personal skincare programs
+            </p>
+          </div>
         </div>
 
-        {/* Text */}
-        <p className="relative uppercase text-colorDarkGray font-semibold bg-colorLightViolien px-8 py-3 mx-auto text-sm top-[148px] left-[50px]">
-          since 2021
-        </p>
-      </div>
-
-      {/* Text */}
-      <p className="absolute top-[670px] left-[230px] flex flex-row uppercase text-colorSceen text-3xl px-4 py-8 rounded-full border border-colorSceen">
-        m - a
-      </p>
-
-      {/* Last Text */}
-      <div className="absolute left-[320px] top-[800px] flex flex-row gap-10 items-end">
-        <div className="flex flex-col text-sm uppercase text-colorSceen text-left">
-          <p>ELEVATE YOUR SENSES</p>
-          <p>WITH THE CONTEMPORARY ART</p>
+        {/* middel Part */}
+        <div className="relative w-[850px] h-[530px] rounded-full flex flex-col ring ring-white/90 ring-offset-[10px] ring-offset-colorGradient2 justify-center items-center">
+          <img
+            src={Model}
+            className="w-[850px] h-[530px] rounded-full object-cover"
+            alt=""
+          />
+          <div className="absolute bottom-0 h-[110px] w-[110px] rounded-full bg-colorDark -mb-14 flex justify-center items-center z-50">
+            <p className="uppercase text-white font-bold -rotate-12">
+              shop <p> now</p>
+            </p>
+          </div>
         </div>
-        <div className="w-[200px] h-[3px] bg-colorSceen mb-2"></div>
+
+        {/* last Part */}
+        <div className="w-full flex flex-col items-center">
+          <img src={Bin} className="w-[150px] ml-auto mr-[100px] mb-5" alt="" />
+          <p className="text-white text-sm w-[170px] ml-16">
+            Gene-personalized skincare that combines science and beauty
+          </p>
+          <div className="w-[250px] h-[370px] bg-white/80 mt-[100px] rounded-full flex flex-col justify-center items-center gap-[30px] ml-20">
+            <p className="text-sm text-black font-medium">OUR ESSENTIALS</p>
+            <img src={Box} className="w-[150px]" alt="" />
+            <p className="text-black text-2xl font-extrabold tracking-tighter w-[150px]">
+              SKIN RESET FACE SERUM
+            </p>
+            <AiFillStar className="text-xs text-black" />
+          </div>
+          <p className="text-right text-7xl font-customText text-white mt-10 mr-10">
+            Innovative formulatinns
+          </p>
+        </div>
+
+        {/* Boxes */}
+        <div className="absolute top-[535px] left-[300px] rounded-2xl w-[270px] h-[200px] border-b-[1px] border-r-[1px] border-white/90"></div>
       </div>
     </div>
   );

@@ -4,14 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: ["Rancho", "cursive"],
+        customText: ["Abel", "sans-serif"],
       },
       colors: {
-        colorDarkGray: "#34333c",
-        colorSceen: "#e9d4b2",
-        colorYello: "#ffac32",
-        colorWhiteShade: "#fffbf3",
-        colorLightViolien: "#c2b6c6",
+        colorGradient1: "#97989f",
+        colorGradient2: "#d1d3d7",
+        colorDark: "#0f1322",
       },
     },
   },
