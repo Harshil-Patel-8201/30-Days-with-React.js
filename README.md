@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Day-26 : Novaskin Website
+
+![React-App](https://github.com/Harshil-Patel-8201/30-Days-with-React.js/assets/83079592/0cb43954-7d27-4c4e-9771-555791f1681c)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
