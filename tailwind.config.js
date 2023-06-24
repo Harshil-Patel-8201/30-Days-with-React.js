@@ -4,15 +4,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customText: ["Bellefair", "serif"],
+        customText: ["Candal", "sans-serif"],
       },
       colors: {
-        colorBackground: "#f6f6f6",
-        colorBlack: "#211f1f",
-        colorOlive: "#566058",
-        colorOrnage: "#d88344",
-        colorGreen: "#566058",
-        colorBorder: "#e7e6ea",
+        colorBackground: "#fcfcfc",
+        colorBigText: "#302315",
+        colorSmallText: "#342a23",
+        colorBorder: "#8b8785",
+        colorGreen: "#34c186",
+        coloLightGray: "#e8e8e8",
+        colorYello: "#f5df23",
       },
     },
   },
