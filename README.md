@@ -75,5 +75,8 @@
 ## Day-25 : Modart Website
 ![image](https://user-images.githubusercontent.com/83079592/247496288-affacda6-9e9f-4c6e-a0ad-a7b3520037f2.png)
 
-## ay-26 : Novaskin Website
+## Day-26 : Novaskin Website
 ![image](https://user-images.githubusercontent.com/83079592/247853091-0cb43954-7d27-4c4e-9771-555791f1681c.png)
+
+## Day-27 : Stelion Website
+![image](https://user-images.githubusercontent.com/83079592/248440523-70353df7-fad1-4c3b-802d-fa536eccc4b3.png)
