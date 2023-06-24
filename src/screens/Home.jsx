@@ -1,102 +1,128 @@
 import React from "react";
 import Logo from "../assets/logo.png";
-import { ImPlay3 } from "react-icons/im";
-import Model from "../assets/model.avif";
-import Bin from "../assets/bin.png";
-import Box from "../assets/cream box.png";
-import { AiFillStar } from "react-icons/ai";
+import BrownChair from "../assets/img1.png";
+import WhiteSofa from "../assets/white sofs.avif";
+import Chair from "../assets/chair.png";
+import OrangeSofa from "../assets/orange sofa.png";
+import { BsArrowRightCircle, BsArrowUpRight, BsPlusLg } from "react-icons/bs";
 
 const Home = () => {
   return (
-    <div className="w-screen h-full bg-gradient-to-r from-colorGradient1 via-colorGradient2 to-colorGradient1 flex flex-col px-[70px]">
+    <div className="w-screen h-full bg-colorBackground flex flex-col">
       {/* Header */}
-      <div className="w-full flex flex-row items-center justify-between py-[30px]">
-        <div className="flex flex-row gap-8 items-center text-sm uppercase text-white font-medium">
-          <p>products</p>
+      <div className="w-full flex flex-row justify-between py-[30px] items-center px-[80px]">
+        <img src={Logo} className="w-[140px]" alt="" />
+        <div className="flex flex-row items-center gap-8 text-sm text-colorBlack/70 capitalize font-semibold tracking-wider">
+          <p>Project</p>
+          <p>pricing</p>
+          <p>blog</p>
           <p>about</p>
         </div>
-        <img src={Logo} className="w-[150px]" alt="" />
-        <div className="flex flex-row gap-8 items-center text-sm uppercase text-white font-medium">
-          <p>ROUTINES</p>
-          <p>JOURNAL</p>
+        <p className="text-white bg-colorBlack px-10 py-3 rounded-full text-sm tracking-wider">
+          Consultation
+        </p>
+      </div>
+
+      {/* first row */}
+      <div className="w-full flex flex-row mt-16 px-[80px]">
+        <div className="flex flex-col text-left text-7xl font-customText text-colorBlack">
+          <p>Brighten every</p>
+          <p>nook and corner</p>
+          <p>of your home</p>
+        </div>
+        <img src={BrownChair} className="w-[200px] ml-10" alt="" />
+        <p className="text-6xl text-colorBlack font-customText ml-10">'23</p>
+        <div className="flex flex-col text-left ml-auto">
+          <p className="text-colorBlack/80 text-sm w-[170px] text-left tracking-wider">
+            Interior aesthetics shapes the human condition
+          </p>
+          <p className="text-colorBlack text-sm font-bold underline underline-offset-4 mt-5">
+            Our Vision
+          </p>
         </div>
       </div>
 
-      {/* Main Part */}
-      <div className="relative w-full flex flex-row justify-between mt-16 mb-10">
-        {/* Left Part */}
-        <div className="w-full flex flex-col">
-          <div className="relative w-[170px] h-[110px] flex justify-center items-center">
-            <img
-              src="https://images.unsplash.com/photo-1491147334573-44cbb4602074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGJhbmFuYSUyMGxlYWZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
-              className="w-full h-full object-cover"
-              alt=""
-            />
-            <div className="absolute w-10 h-10 bg-white rounded-full flex justify-center items-center">
-              <ImPlay3 className="text-black ml-1" />
-            </div>
-          </div>
-          <div className="flex flex-col text-left text-white text-8xl tracking-tighter font-customText my-20">
-            <p>Gene</p>
-            <p>skincare</p>
-            <p>treatment</p>
-            <p className="text-sm underline underline-offset-4 font-sans tracking-normal font-semibold mt-10">
-              LEARN MORE
-            </p>
-          </div>
-          <div className="flex flex-col mt-10">
-            <p className="text-xs text-white px-8 py-3 border-[1px] border-white rounded-full mr-auto my-1">
-              🫐 Clinically-proven
-            </p>
-            <div className="flex flex-row">
-              <p className="text-xs text-white px-8 py-3 border-[1px] border-white rounded-full mr-2 my-1">
-                🥒 Vegan formulas
-              </p>
-              <p className="text-xs text-black px-8 py-3 bg-white rounded-full mr-auto my-1">
-                🧬 DNA-based
-              </p>
-            </div>
-            <p className="text-xs text-white px-8 py-3 border-[1px] border-white rounded-full mr-auto my-1">
-              🌿 Personal skincare programs
-            </p>
-          </div>
-        </div>
-
-        {/* middel Part */}
-        <div className="relative w-[850px] h-[530px] rounded-full flex flex-col ring ring-white/90 ring-offset-[10px] ring-offset-colorGradient2 justify-center items-center">
+      {/* Second Row */}
+      <div className="w-full flex flex-row items-center justify-center mt-8 mb-[120px] px-[80px]">
+        <div className="flex flex-row w-full">
           <img
-            src={Model}
-            className="w-[850px] h-[530px] rounded-full object-cover"
+            src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            className="w-24 h-24 rounded-full object-cover z-20"
             alt=""
           />
-          <div className="absolute bottom-0 h-[110px] w-[110px] rounded-full bg-colorDark -mb-14 flex justify-center items-center z-50">
-            <p className="uppercase text-white font-bold -rotate-12">
-              shop <p> now</p>
+          <img
+            src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60"
+            className="w-24 h-24 rounded-full object-cover -ml-10 z-10"
+            alt=""
+          />
+          <div className="w-24 h-24 rounded-full bg-colorOrnage -ml-10"></div>
+        </div>
+        <div className="relative flex justify-center items-center w-full">
+          <img
+            src={WhiteSofa}
+            className="w-[120px] h-[150px] object-cover -rotate-12"
+            alt=""
+          />
+          <div className="p-1 rounded-full bg-white border-[1px] border-colorBorder flex flex-row items-center absolute shadow-xl">
+            <p className="text-colorBlack text-sm font-medium mr-[100px] ml-8 tracking-wider">
+              Book free consultation
             </p>
+            <div className="bg-colorOrnage h-14 w-14 rounded-full flex justify-center items-center">
+              <BsPlusLg className="text-xl text-white" />
+            </div>
+          </div>
+        </div>
+        <div className="relative w-[1000px]">
+          <img src={Chair} className="ml-28" alt="" />
+          <div className="absolute top-5 left-[160px] w-12 h-12 bg-colorOlive rounded-full flex justify-center items-center">
+            <BsArrowUpRight className="text-white" />
+          </div>
+        </div>
+      </div>
+
+      {/* Third row */}
+      <div className="h-[250px] w-full bg-colorGreen flex flex-row items-center justify-between">
+        {/* First row */}
+        <div className="w-full h-full flex flex-col items-center justify-center">
+          <p className="w-[250px] text-6xl font-customText text-white text-left">
+            480 +
+          </p>
+          <p className="w-[250px] text-xl uppercase text-white text-left mt-5 bg-colorOrnage p-2">
+            BEST INTERIOR DESIGNS CREATED
+          </p>
+        </div>
+
+        {/* second row */}
+        <div className="w-full h-full border-x-[1px] border-white/20 flex flex-col items-center justify-center">
+          <div className="w-full h-full relative flex justify-center items-center -mt-[170px]">
+            <img
+              src={OrangeSofa}
+              className="w-[130px] absolute z-20 shadow-2xl"
+              alt=""
+            />
+            <div className="w-[110px] h-[130px] bg-slate-200 rotate-12 ml-16 mb-14"></div>
+          </div>
+          <div className="flex flex-row gap-5 items-center -mb-5">
+            <p className="text-white text-xl tracking-wider">Projects</p>
+            <BsArrowRightCircle className="text-3xl text-white" />
           </div>
         </div>
 
-        {/* last Part */}
-        <div className="w-full flex flex-col items-center">
-          <img src={Bin} className="w-[150px] ml-auto mr-[100px] mb-5" alt="" />
-          <p className="text-white text-sm w-[170px] ml-16">
-            Gene-personalized skincare that combines science and beauty
-          </p>
-          <div className="w-[250px] h-[370px] bg-white/80 mt-[100px] rounded-full flex flex-col justify-center items-center gap-[30px] ml-20">
-            <p className="text-sm text-black font-medium">OUR ESSENTIALS</p>
-            <img src={Box} className="w-[150px]" alt="" />
-            <p className="text-black text-2xl font-extrabold tracking-tighter w-[150px]">
-              SKIN RESET FACE SERUM
-            </p>
-            <AiFillStar className="text-xs text-black" />
+        {/* third row */}
+        <div className="w-full h-full flex flex-col items-center justify-center">
+          <div className="flex flex-row w-[250px]">
+            <div className="w-12 h-12 rounded-full bg-colorOrnage"></div>
+            <img
+              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              className="w-12 h-12 rounded-full object-cover z-20 -ml-4"
+              alt=""
+            />
           </div>
-          <p className="text-right text-7xl font-customText text-white mt-10 mr-10">
-            Innovative formulatinns
+          <p className="w-[270px] text-sm text-white tracking-wider font-medium mt-5 text-left">
+            It's our way of life. Stelion's designers create entirely new
+            individual interiors and objects.
           </p>
         </div>
-
-        {/* Boxes */}
-        <div className="absolute top-[535px] left-[300px] rounded-2xl w-[270px] h-[200px] border-b-[1px] border-r-[1px] border-white/90"></div>
       </div>
     </div>
   );
