@@ -3,18 +3,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        customText: ["Candal", "sans-serif"],
-      },
       colors: {
-        colorBackGround: "#245274",
-        colorGreen: "#69ffb6",
-        colorGrediant1: "#6effb8",
-        colorGrediant2: "#b5ffb6",
-        colorGrediant3: "#e1ffb5",
-        colorBlue: "#baf3fb",
-        colorGrediantDark1: "#2f6587",
-        colorGrediantDark2: "#183f66",
+        colorBackground: "#efefef",
+        colorGreen: "#9bea47",
+        colorLightGreen: "#bae289",
+        colorLightWhite: "#e4e1e1",
+        colorBarBackground: "#cdcdcd",
+        colorPiller1: "#b9e289",
+        colorPiller2: "#99ce63",
+        colorPiller3: "#79b34c",
+        colorGreenCircle: "#99ea48",
       },
     },
   },
