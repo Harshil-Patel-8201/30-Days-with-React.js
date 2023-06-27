@@ -390,7 +390,7 @@ const Home = () => {
           Digital Marketing & SEO ServicesThat Grow Traffic & Increase Revenue
         </p>
         <div className="flex flex-col gap-7">
-          <p className="text-sm text-black/40 text-left mt-7">
+          <p className="text-sm text-black/40 text-left">
             We are the top digital marketing agency for branding corp. We offer
             a full range of services to help clients improve their search engine
             rankings and drive more traffic to their websites.
